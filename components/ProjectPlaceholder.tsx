@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { withBasePath } from "@/lib/sitePath";
 
 type ProjectPlaceholderProps = {
   title: string;
@@ -19,7 +20,7 @@ export function ProjectPlaceholder({
     <article className="group overflow-hidden rounded-md border border-stone/80 bg-paper shadow-sm transition hover:-translate-y-0.5 hover:shadow-soft">
       <div className="relative aspect-[4/3] overflow-hidden bg-stone">
         <Image
-          src={imageSrc}
+          src={withBasePath(imageSrc)}
           alt={imageAlt}
           fill
           priority={priority}
