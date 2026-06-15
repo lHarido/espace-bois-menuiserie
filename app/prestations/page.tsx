@@ -43,7 +43,10 @@ export default function PrestationsPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/76 via-ink/10 to-transparent" aria-hidden="true" />
             <figcaption className="absolute inset-x-0 bottom-0 p-5 text-paper sm:p-7">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-timber">Fenêtres, volets, finitions</p>
+              <p className="text-xs font-semibold uppercase leading-5 tracking-[0.12em] text-timber">
+                <span className="sm:hidden">Rendu menuiseries</span>
+                <span className="hidden sm:inline">Fenêtres, volets, finitions</span>
+              </p>
               <p className="mt-2 max-w-lg text-2xl font-semibold leading-tight">
                 Voir le rendu final avant de parler produit.
               </p>

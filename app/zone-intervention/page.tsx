@@ -145,8 +145,9 @@ export default function ZoneInterventionPage() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-ink/78 via-ink/10 to-transparent" aria-hidden="true" />
             <figcaption className="absolute inset-x-0 bottom-0 p-5 text-paper sm:p-7">
-              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-timber">
-                Ain, Pays de Gex, Haute-Savoie proche
+              <p className="text-xs font-semibold uppercase leading-5 tracking-[0.12em] text-timber">
+                <span className="sm:hidden">Ain, Pays de Gex</span>
+                <span className="hidden sm:inline">Ain, Pays de Gex, Haute-Savoie proche</span>
               </p>
               <p className="mt-2 max-w-lg text-2xl font-semibold leading-tight">
                 Une zone large, mais pas au hasard : la commune se valide dès le premier appel.
