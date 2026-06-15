@@ -23,9 +23,9 @@ export default function ContactPage() {
         <div className="container-shell">
           <SectionTitle as="h1" eyebrow="Contact" title="Parlez de votre projet de menuiserie">
             <p>
-              Pour gagner du temps, préparez le type de projet, la commune du
-              chantier et quelques dimensions. Le téléphone reste le moyen le plus
-              direct pour valider la faisabilité dans la zone d'intervention.
+              Le plus rapide : appelez avec la commune, deux photos et les
+              dimensions approximatives. Le formulaire sert surtout à structurer
+              les infos avant l'échange.
             </p>
           </SectionTitle>
 

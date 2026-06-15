@@ -3,10 +3,10 @@ import { MapPin, Phone } from "lucide-react";
 import { company, fullAddress } from "@/lib/company";
 
 const footerNav = [
-  { label: "Prestations", href: "/prestations" },
+  { label: "Projets", href: "/prestations" },
   { label: "Réalisations", href: "/realisations" },
   { label: "Avis clients", href: "/avis" },
-  { label: "À propos", href: "/a-propos" },
+  { label: "Zone d'intervention", href: "/#zone" },
   { label: "Contact", href: "/contact" },
 ];
 

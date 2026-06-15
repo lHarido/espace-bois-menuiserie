@@ -7,11 +7,10 @@ import { useState } from "react";
 import { company } from "@/lib/company";
 
 const navigation = [
-  { label: "Accueil", href: "/" },
-  { label: "Prestations", href: "/prestations" },
+  { label: "Projets", href: "/prestations" },
   { label: "Réalisations", href: "/realisations" },
   { label: "Avis", href: "/avis" },
-  { label: "À propos", href: "/a-propos" },
+  { label: "Zone", href: "/#zone" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -30,7 +29,7 @@ export function Header() {
             <span className="block truncate text-sm font-bold tracking-wide text-ink">
               {company.name}
             </span>
-            <span className="hidden text-xs text-steel sm:block">Autour de Valserhône</span>
+            <span className="hidden text-xs text-steel sm:block">Valserhône + 1h</span>
           </span>
         </Link>
 

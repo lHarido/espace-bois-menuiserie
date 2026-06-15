@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     template: "%s | Espace Bois Menuiserie",
   },
   description:
-    "Menuiserie bois, PVC et aluminium autour de Valserhône : fenêtres, portes, volets, escaliers, parquets et agencements sur mesure dans un rayon d'environ 1h.",
+    "Fenêtres alu RAL 7016, PVC blanc, volets, portes et bois intérieur autour de Valserhône, dans un rayon d'environ 1h.",
   keywords: company.seoTerms,
   authors: [{ name: company.name }],
   openGraph: {
     title: "Menuisier autour de Valserhône - Espace Bois Menuiserie",
     description:
-      "Fenêtres, portes, volets et menuiseries sur mesure autour de Valserhône.",
+      "Menuiseries posées proprement autour de Valserhône : alu, PVC, volets, portes et bois intérieur.",
     locale: "fr_FR",
     type: "website",
   },

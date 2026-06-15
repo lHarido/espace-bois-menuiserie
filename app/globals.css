@@ -30,15 +30,13 @@ body::before {
   z-index: -1;
   pointer-events: none;
   background:
-    radial-gradient(circle at top left, rgba(184, 118, 60, 0.2), transparent 34rem),
-    radial-gradient(circle at 90% 8%, rgba(81, 104, 62, 0.12), transparent 26rem),
-    linear-gradient(rgba(251, 244, 233, 0.96), rgba(251, 244, 233, 0.96)),
+    linear-gradient(180deg, rgba(255, 250, 240, 0.98), rgba(247, 239, 227, 0.98)),
     repeating-linear-gradient(
       90deg,
-      rgba(91, 53, 31, 0.04) 0,
-      rgba(91, 53, 31, 0.04) 1px,
+      rgba(91, 53, 31, 0.035) 0,
+      rgba(91, 53, 31, 0.035) 1px,
       transparent 1px,
-      transparent 32px
+      transparent 56px
     );
 }
 
@@ -78,13 +76,13 @@ select:focus-visible {
 
 .atelier-texture {
   background:
-    linear-gradient(135deg, rgba(43, 33, 24, 0.94), rgba(91, 53, 31, 0.78)),
+    linear-gradient(120deg, rgba(43, 33, 24, 0.98), rgba(91, 53, 31, 0.88)),
     repeating-linear-gradient(
       90deg,
-      rgba(255, 250, 240, 0.08) 0,
-      rgba(255, 250, 240, 0.08) 1px,
+      rgba(255, 250, 240, 0.06) 0,
+      rgba(255, 250, 240, 0.06) 1px,
       transparent 1px,
-      transparent 18px
+      transparent 26px
     );
 }
 

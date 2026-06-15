@@ -48,10 +48,10 @@ export function ContactForm({ contactEmail }: ContactFormProps) {
   return (
     <form onSubmit={handleSubmit} className="rounded-md border border-stone/80 bg-paper p-5 shadow-sm">
       <div className="mb-5">
-        <h2 className="text-xl font-semibold text-ink">Préparer une demande claire</h2>
+        <h2 className="text-xl font-semibold text-ink">Gagner du temps au téléphone</h2>
         <p className="mt-2 text-sm leading-6 text-steel">
-          Ces informations aident à cadrer l'échange. Pour aller vite, appelez
-          directement avec le type de projet, la commune et quelques dimensions.
+          Notez les infos utiles avant d'appeler : commune, type de menuiserie,
+          photos, dimensions approximatives et objectif du chantier.
         </p>
       </div>
       <div className="grid gap-4 sm:grid-cols-2">
@@ -138,7 +138,7 @@ export function ContactForm({ contactEmail }: ContactFormProps) {
       </div>
 
       <div className="mt-5 rounded-md bg-sage px-4 py-3 text-sm leading-6 text-ink">
-        <p>Le plus efficace : indiquez la commune, le type de menuiserie, les dimensions approximatives et l'objectif du chantier.</p>
+        <p>Pas besoin d'un dossier parfait : une commune, deux photos et une mesure suffisent souvent pour savoir si le projet part dans la bonne direction.</p>
       </div>
 
       {status === "prepared" ? (
