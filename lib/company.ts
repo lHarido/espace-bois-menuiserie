@@ -58,9 +58,9 @@ export type QualitySignal = {
 
 export const company = {
   name: "ESPACE BOIS MENUISERIE",
-  tagline: "Menuiserie bois, PVC & aluminium à Confort",
+  tagline: "Menuiserie bois, PVC & aluminium autour de Valserhône",
   description:
-    "Fenêtres, portes, volets, escaliers, parquets et agencements sur mesure pour vos projets de rénovation et d'aménagement.",
+    "Fenêtres, portes, volets, escaliers, parquets et agencements sur mesure dans un rayon d'environ 1h autour de Valserhône.",
   manager: "Julien TOURNEUX",
   legalForm: "Société par actions simplifiée",
   capital: "5 000 €",
@@ -83,16 +83,19 @@ export const company = {
   supplier: "BOUVET",
   payments: ["Chèque", "Espèces", "Virement bancaire"],
   areas: [
-    "Confort",
-    "Valserhône",
+    "Valserhône et alentours",
     "Bellegarde-sur-Valserine",
-    "Ain (01)",
-    "Haute-Savoie (74), selon projet",
+    "Pays de Gex, selon chantier",
+    "Nantua / Oyonnax, selon chantier",
+    "Ain (01) et Haute-Savoie proche",
+    "Rayon d'environ 1h autour de Valserhône",
   ],
   seoTerms: [
-    "menuisier Confort",
-    "menuiserie Ain",
-    "pose fenêtres Ain",
+    "menuisier Valserhône",
+    "menuiserie Valserhône",
+    "pose fenêtres Valserhône",
+    "menuisier Bellegarde-sur-Valserine",
+    "menuiserie Ain Haute-Savoie",
     "fenêtres PVC bois aluminium",
     "volets roulants",
     "porte de garage",
@@ -290,7 +293,7 @@ export const services: Service[] = [
     shortTitle: "Rénovation énergétique",
     description:
       "Accompagnement sur le remplacement des menuiseries pour améliorer la performance thermique du logement.",
-    items: ["Fenêtres isolantes", "Portes performantes", "Volets adaptés", "Confort thermique"],
+    items: ["Fenêtres isolantes", "Portes performantes", "Volets adaptés", "Isolation thermique"],
     icon: BadgeCheck,
   },
 ];

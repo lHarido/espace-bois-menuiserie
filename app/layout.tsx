@@ -10,17 +10,17 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 export const metadata: Metadata = {
   metadataBase: siteUrl ? new URL(siteUrl) : undefined,
   title: {
-    default: "Menuisier à Confort - Espace Bois Menuiserie",
+    default: "Menuisier autour de Valserhône - Espace Bois Menuiserie",
     template: "%s | Espace Bois Menuiserie",
   },
   description:
-    "Menuiserie bois, PVC et aluminium à Confort près de Valserhône : fenêtres, portes, volets, escaliers, parquets et agencements sur mesure.",
+    "Menuiserie bois, PVC et aluminium autour de Valserhône : fenêtres, portes, volets, escaliers, parquets et agencements sur mesure dans un rayon d'environ 1h.",
   keywords: company.seoTerms,
   authors: [{ name: company.name }],
   openGraph: {
-    title: "Menuisier à Confort - Espace Bois Menuiserie",
+    title: "Menuisier autour de Valserhône - Espace Bois Menuiserie",
     description:
-      "Fenêtres, portes, volets et menuiseries sur mesure dans l'Ain.",
+      "Fenêtres, portes, volets et menuiseries sur mesure autour de Valserhône.",
     locale: "fr_FR",
     type: "website",
   },

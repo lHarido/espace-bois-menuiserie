@@ -27,10 +27,10 @@ export default function HomePage() {
         <div className="container-shell grid min-w-0 gap-8 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:items-center">
           <div className="min-w-0">
             <p className="mb-4 inline-flex rounded-md bg-sage px-3 py-2 text-sm font-semibold text-moss">
-              Artisan menuisier basé à Confort, dans l'Ain
+              Artisan menuisier autour de Valserhône
             </p>
             <h1 className="max-w-4xl break-words font-display text-3xl font-semibold leading-tight text-ink sm:text-5xl sm:leading-[1.04]">
-              Fenêtres, volets et menuiseries posés proprement à Confort
+              Fenêtres, volets et menuiseries posés proprement autour de Valserhône
             </h1>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-steel">
               Bois, PVC ou aluminium : un artisan local pour remplacer vos
@@ -220,11 +220,11 @@ export default function HomePage() {
 
       <section className="bg-linen py-14 sm:py-16">
         <div className="container-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <SectionTitle eyebrow="Zone d'intervention" title="Un menuisier à Confort, près de Valserhône">
+          <SectionTitle eyebrow="Zone d'intervention" title="Un rayon d'environ 1h autour de Valserhône">
             <p>
-              L'ancrage local est centré sur Confort, Valserhône,
-              Bellegarde-sur-Valserine et l'Ain. Pour les communes voisines, le
-              plus simple est d'appeler pour confirmer la faisabilité du chantier.
+              L'entreprise intervient en priorité autour de Valserhône et dans les
+              communes accessibles dans un rayon d'environ une heure, selon la
+              nature du chantier.
             </p>
           </SectionTitle>
           <div className="grid gap-3 sm:grid-cols-2">

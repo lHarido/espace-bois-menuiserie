@@ -9,7 +9,7 @@ import { company, fullAddress } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contactez Espace Bois Menuiserie à Confort : téléphone, adresse, horaires et formulaire de demande pour vos projets de menuiserie.",
+    "Contactez Espace Bois Menuiserie autour de Valserhône : téléphone, adresse, horaires et demande pour vos projets de menuiserie.",
 };
 
 export default function ContactPage() {
@@ -25,7 +25,7 @@ export default function ContactPage() {
             <p>
               Pour gagner du temps, préparez le type de projet, la commune du
               chantier et quelques dimensions. Le téléphone reste le moyen le plus
-              direct pour valider la faisabilité.
+              direct pour valider la faisabilité dans la zone d'intervention.
             </p>
           </SectionTitle>
 

@@ -22,13 +22,17 @@ export function Footer() {
             <span className="text-sm font-bold tracking-wide text-ink">{company.name}</span>
           </Link>
           <p className="mt-4 max-w-md text-sm leading-6 text-steel">
-            Menuiserie bois, PVC et aluminium à Confort pour fenêtres, portes,
-            volets, agencements et travaux sur mesure.
+            Menuiserie bois, PVC et aluminium autour de Valserhône pour fenêtres,
+            portes, volets, agencements et travaux sur mesure.
+          </p>
+          <p className="mt-3 max-w-md text-sm leading-6 text-steel">
+            Zone d'intervention : rayon d'environ 1h autour de Valserhône, selon
+            la nature du chantier.
           </p>
           <div className="mt-5 space-y-3 text-sm text-steel">
             <p className="flex gap-2">
               <MapPin aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-moss" />
-              <span>{fullAddress}</span>
+              <span>Adresse : {fullAddress}</span>
             </p>
             <p className="flex gap-2">
               <Phone aria-hidden="true" className="mt-0.5 h-4 w-4 shrink-0 text-moss" />

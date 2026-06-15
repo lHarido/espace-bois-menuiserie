@@ -8,7 +8,7 @@ import { services } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Prestations de menuiserie bois, PVC et aluminium",
   description:
-    "Fenêtres, portes, volets roulants, escaliers sur mesure, parquets, dressings et rénovation énergétique des menuiseries à Confort dans l'Ain.",
+    "Fenêtres, portes, volets roulants, escaliers sur mesure, parquets, dressings et rénovation énergétique autour de Valserhône.",
 };
 
 export default function PrestationsPage() {
@@ -17,10 +17,10 @@ export default function PrestationsPage() {
       <Breadcrumbs items={[{ label: "Prestations" }]} />
       <section className="py-12 sm:py-16">
         <div className="container-shell">
-          <SectionTitle as="h1" eyebrow="Prestations" title="Menuiserie intérieure et extérieure à Confort">
+          <SectionTitle as="h1" eyebrow="Prestations" title="Menuiserie intérieure et extérieure autour de Valserhône">
             <p>
               Choisissez votre point d'entrée selon l'objectif du chantier :
-              confort thermique, sécurité, accès, rangement ou finitions intérieures.
+              performance thermique, sécurité, accès, rangement ou finitions intérieures.
             </p>
           </SectionTitle>
           <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">

@@ -8,7 +8,7 @@ import { company } from "@/lib/company";
 export const metadata: Metadata = {
   title: "À propos de l'entreprise",
   description:
-    "Présentation d'Espace Bois Menuiserie, entreprise de menuiserie créée en 2014 et basée à Confort, dirigée par Julien TOURNEUX.",
+    "Présentation d'Espace Bois Menuiserie, entreprise de menuiserie près de Valserhône, créée en 2014 et dirigée par Julien TOURNEUX.",
 };
 
 export default function AProposPage() {
@@ -17,12 +17,12 @@ export default function AProposPage() {
       <Breadcrumbs items={[{ label: "À propos" }]} />
       <section className="py-12 sm:py-16">
         <div className="container-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <SectionTitle as="h1" eyebrow="À propos" title="Espace Bois Menuiserie, artisan local à Confort">
+          <SectionTitle as="h1" eyebrow="À propos" title="Espace Bois Menuiserie, artisan local près de Valserhône">
             <p>
-              {company.name} est une entreprise de menuiserie spécialisée dans la
-              vente, la fourniture et la pose de menuiseries, fenêtres, portes
-              intérieures et extérieures, huisseries, menuiseries bois, PVC et
-              aluminium.
+              {company.name} intervient autour de Valserhône, dans un rayon
+              d'environ une heure, pour la vente, la fourniture et la pose de
+              menuiseries, fenêtres, portes intérieures et extérieures, huisseries,
+              menuiseries bois, PVC et aluminium.
             </p>
             <p className="mt-4">
               Dirigée par {company.manager}, l'entreprise met en avant une approche

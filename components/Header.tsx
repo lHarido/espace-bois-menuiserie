@@ -30,7 +30,7 @@ export function Header() {
             <span className="block truncate text-sm font-bold tracking-wide text-ink">
               {company.name}
             </span>
-            <span className="hidden text-xs text-steel sm:block">Menuiserie à Confort</span>
+            <span className="hidden text-xs text-steel sm:block">Autour de Valserhône</span>
           </span>
         </Link>
 
