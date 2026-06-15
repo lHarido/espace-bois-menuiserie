@@ -6,7 +6,7 @@ const footerNav = [
   { label: "Projets", href: "/prestations" },
   { label: "Réalisations", href: "/realisations" },
   { label: "Avis clients", href: "/avis" },
-  { label: "Zone d'intervention", href: "/#zone" },
+  { label: "Zone d'intervention", href: "/zone-intervention" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -26,8 +26,8 @@ export function Footer() {
             portes, volets, agencements et travaux sur mesure.
           </p>
           <p className="mt-3 max-w-md text-sm leading-6 text-steel">
-            Zone d'intervention : rayon d'environ 1h autour de Valserhône, selon
-            la nature du chantier.
+            Zone d'intervention : Valserhône, Ain, Pays de Gex et Haute-Savoie
+            proche, selon la nature du chantier.
           </p>
           <div className="mt-5 space-y-3 text-sm text-steel">
             <p className="flex gap-2">

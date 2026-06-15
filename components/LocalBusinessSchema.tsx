@@ -19,6 +19,23 @@ export function LocalBusinessSchema() {
       },
     ]);
 
+  const areaServed = [
+    { "@type": "AdministrativeArea", name: "Ain" },
+    { "@type": "AdministrativeArea", name: "Haute-Savoie" },
+    { "@type": "Place", name: "Pays de Gex" },
+    { "@type": "City", name: "Valserhône" },
+    { "@type": "City", name: "Bellegarde-sur-Valserine" },
+    { "@type": "City", name: "Gex" },
+    { "@type": "City", name: "Divonne-les-Bains" },
+    { "@type": "City", name: "Ferney-Voltaire" },
+    { "@type": "City", name: "Saint-Genis-Pouilly" },
+    { "@type": "City", name: "Nantua" },
+    { "@type": "City", name: "Oyonnax" },
+    { "@type": "City", name: "Saint-Julien-en-Genevois" },
+    { "@type": "City", name: "Annecy" },
+    ...company.areas.map((area) => ({ "@type": "Place", name: area })),
+  ];
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "HomeAndConstructionBusiness",
@@ -32,7 +49,7 @@ export function LocalBusinessSchema() {
       addressLocality: company.address.city,
       addressCountry: "FR",
     },
-    areaServed: company.areas,
+    areaServed,
     paymentAccepted: company.payments,
     openingHoursSpecification,
     description: company.description,

@@ -8,9 +8,9 @@ import { projectShowcase } from "@/lib/company";
 import { withBasePath } from "@/lib/sitePath";
 
 export const metadata: Metadata = {
-  title: "Réalisations menuiserie autour de Valserhône",
+  title: "Réalisations menuiserie Ain et Pays de Gex",
   description:
-    "Rendus de menuiseries pour se projeter : fenêtres aluminium RAL 7016, PVC blanc, volets roulants, escalier, parquet, dressing et porte de garage.",
+    "Rendus de menuiseries autour de Valserhône, dans l'Ain, le Pays de Gex et la Haute-Savoie proche : fenêtres aluminium RAL 7016, PVC blanc, volets, escalier, parquet et dressing.",
 };
 
 export default function RealisationsPage() {

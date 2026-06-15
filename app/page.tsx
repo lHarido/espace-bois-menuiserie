@@ -88,15 +88,15 @@ export default function HomePage() {
         <div className="container-shell grid gap-10 py-10 sm:py-14 lg:grid-cols-[0.95fr_1.05fr] lg:items-stretch">
           <div className="flex min-w-0 flex-col justify-center">
             <p className="mb-5 w-fit border-l-4 border-timber bg-linen px-4 py-2 text-sm font-semibold text-moss">
-              Valserhône + environ 1h autour
+              Valserhône, Ain, Pays de Gex
             </p>
             <h1 className="max-w-4xl break-words font-display text-4xl font-semibold leading-[1.02] text-ink sm:text-6xl">
               Menuiseries autour de Valserhône, posées sans faire durer le flou.
             </h1>
             <p className="mt-5 max-w-2xl text-lg leading-8 text-steel">
               Fenêtres alu RAL 7016, PVC blanc, volets, portes et bois intérieur :
-              on regarde votre maison, votre usage et les finitions attendues avant
-              de parler catalogue.
+              on regarde votre maison, votre usage, votre commune dans l'Ain, le
+              Pays de Gex ou la Haute-Savoie proche avant de parler catalogue.
             </p>
             <div className="mt-7 flex min-w-0 flex-col gap-3 sm:flex-row">
               <a
@@ -352,7 +352,7 @@ export default function HomePage() {
           <div>
             <p className="text-sm font-semibold uppercase text-moss">Zone d'intervention</p>
             <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-              Priorité aux chantiers à environ 1h de Valserhône.
+              Ain, Pays de Gex et Haute-Savoie proche : la commune se valide au départ.
             </h2>
             <p className="mt-4 leading-7 text-steel">
               Le plus simple reste d'appeler avec la commune du chantier. Selon la
@@ -360,6 +360,13 @@ export default function HomePage() {
               de Bellegarde-sur-Valserine, le Pays de Gex, Nantua, Oyonnax et la
               Haute-Savoie proche.
             </p>
+            <Link
+              href="/zone-intervention"
+              className="mt-6 inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-bark/35 bg-white px-4 py-2 text-sm font-semibold text-ink transition hover:border-moss hover:text-moss sm:w-fit"
+            >
+              Voir la zone d'intervention
+              <ArrowRight aria-hidden="true" className="h-4 w-4" />
+            </Link>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
             {company.areas.map((area) => (

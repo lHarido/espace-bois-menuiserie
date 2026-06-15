@@ -8,6 +8,7 @@ const routes = [
   "/realisations",
   "/avis",
   "/a-propos",
+  "/zone-intervention",
   "/contact",
   "/mentions-legales",
   "/politique-confidentialite",
@@ -21,6 +22,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     url: `${siteUrl}${route}`,
     lastModified,
     changeFrequency: route === "" ? "weekly" : "monthly",
-    priority: route === "" ? 1 : 0.7,
+    priority: route === "" ? 1 : route === "/zone-intervention" ? 0.85 : 0.7,
   }));
 }

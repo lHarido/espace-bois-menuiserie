@@ -9,9 +9,9 @@ import { company, services } from "@/lib/company";
 import { withBasePath } from "@/lib/sitePath";
 
 export const metadata: Metadata = {
-  title: "Projets de menuiserie autour de Valserhône",
+  title: "Prestations menuiserie Ain, Pays de Gex, Haute-Savoie",
   description:
-    "Fenêtres, portes, volets roulants, escaliers sur mesure, parquets, dressings et rénovation énergétique autour de Valserhône.",
+    "Fenêtres, portes, volets roulants, escaliers, parquets, dressings et rénovation énergétique autour de Valserhône, dans l'Ain, le Pays de Gex et la Haute-Savoie proche.",
 };
 
 export default function PrestationsPage() {

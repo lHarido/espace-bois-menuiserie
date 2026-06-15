@@ -10,7 +10,7 @@ const navigation = [
   { label: "Projets", href: "/prestations" },
   { label: "Réalisations", href: "/realisations" },
   { label: "Avis", href: "/avis" },
-  { label: "Zone", href: "/#zone" },
+  { label: "Zone", href: "/zone-intervention" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -29,7 +29,7 @@ export function Header() {
             <span className="block truncate text-sm font-bold tracking-wide text-ink">
               {company.name}
             </span>
-            <span className="hidden text-xs text-steel sm:block">Valserhône + 1h</span>
+            <span className="hidden text-xs text-steel sm:block">Ain + Pays de Gex</span>
           </span>
         </Link>
 

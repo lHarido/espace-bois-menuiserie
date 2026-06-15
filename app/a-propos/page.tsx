@@ -5,9 +5,9 @@ import { ContactCTA } from "@/components/ContactCTA";
 import { company } from "@/lib/company";
 
 export const metadata: Metadata = {
-  title: "À propos d'Espace Bois Menuiserie",
+  title: "Artisan menuisier près de Valserhône, Ain",
   description:
-    "Espace Bois Menuiserie, artisan menuisier près de Valserhône : pose de menuiseries, fenêtres, volets, portes, escaliers, parquets et rangements.",
+    "Espace Bois Menuiserie, artisan menuisier près de Valserhône : pose de menuiseries dans l'Ain, le Pays de Gex et la Haute-Savoie proche.",
 };
 
 const facts = [

@@ -6,9 +6,9 @@ import { ContactForm } from "@/components/ContactForm";
 import { company, fullAddress } from "@/lib/company";
 
 export const metadata: Metadata = {
-  title: "Contact menuisier autour de Valserhône",
+  title: "Contact menuisier Ain, Pays de Gex, Haute-Savoie",
   description:
-    "Contactez Espace Bois Menuiserie autour de Valserhône : téléphone, zone d'intervention, horaires et préparation de demande.",
+    "Contactez Espace Bois Menuiserie près de Valserhône pour un chantier dans l'Ain, le Pays de Gex ou la Haute-Savoie proche : téléphone, horaires et zone d'intervention.",
 };
 
 export default function ContactPage() {
