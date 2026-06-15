@@ -1,49 +1,58 @@
 import type { Metadata } from "next";
-import { BadgeCheck, Building2, CalendarDays, UserRound } from "lucide-react";
+import { BadgeCheck, Building2, CalendarDays, CheckCircle2, UserRound } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { ContactCTA } from "@/components/ContactCTA";
-import { SectionTitle } from "@/components/SectionTitle";
 import { company } from "@/lib/company";
 
 export const metadata: Metadata = {
-  title: "À propos de l'entreprise",
+  title: "À propos d'Espace Bois Menuiserie",
   description:
-    "Présentation d'Espace Bois Menuiserie, entreprise de menuiserie près de Valserhône, créée en 2014 et dirigée par Julien TOURNEUX.",
+    "Espace Bois Menuiserie, artisan menuisier près de Valserhône : pose de menuiseries, fenêtres, volets, portes, escaliers, parquets et rangements.",
 };
+
+const facts = [
+  { label: "Dirigeant", value: company.manager, icon: UserRound },
+  { label: "Création", value: company.createdAt, icon: CalendarDays },
+  { label: "Statut", value: company.legalForm, icon: Building2 },
+  { label: "Qualification", value: company.certification, icon: BadgeCheck },
+];
+
+const workingRules = [
+  "Comprendre le besoin avant de pousser un matériau.",
+  "Valider la zone d'intervention avant de faire perdre du temps.",
+  "Soigner ce qui reste visible : seuils, raccords, alignements et habillages.",
+];
 
 export default function AProposPage() {
   return (
     <>
       <Breadcrumbs items={[{ label: "À propos" }]} />
       <section className="py-12 sm:py-16">
-        <div className="container-shell grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <SectionTitle as="h1" eyebrow="À propos" title="Espace Bois Menuiserie, artisan local près de Valserhône">
-            <p>
+        <div className="container-shell grid gap-10 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
+          <div>
+            <p className="text-sm font-semibold uppercase text-moss">À propos</p>
+            <h1 className="mt-3 font-display text-4xl font-semibold leading-tight text-ink sm:text-5xl">
+              Un artisan local, pas un standard téléphonique.
+            </h1>
+            <p className="mt-5 leading-7 text-steel">
               {company.name} intervient autour de Valserhône, dans un rayon
-              d'environ une heure, pour la vente, la fourniture et la pose de
-              menuiseries, fenêtres, portes intérieures et extérieures, huisseries,
-              menuiseries bois, PVC et aluminium.
+              d'environ une heure, pour poser et remplacer des fenêtres, volets,
+              portes, escaliers, parquets, dressings et menuiseries sur mesure.
             </p>
-            <p className="mt-4">
-              Dirigée par {company.manager}, l'entreprise met en avant une approche
-              de terrain : écouter le besoin, conseiller les solutions adaptées et
-              réaliser une pose soignée.
+            <p className="mt-4 leading-7 text-steel">
+              L'objectif est simple : comprendre le logement, choisir une solution
+              cohérente et laisser un chantier propre, avec des finitions qui tiennent.
             </p>
-          </SectionTitle>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {[
-              { label: "Dirigeant", value: company.manager, icon: UserRound },
-              { label: "Création", value: company.createdAt, icon: CalendarDays },
-              { label: "Statut", value: company.legalForm, icon: Building2 },
-              { label: "Qualification", value: company.certification, icon: BadgeCheck },
-            ].map((item) => {
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-2">
+            {facts.map((item) => {
               const Icon = item.icon;
+
               return (
-                <div key={item.label} className="rounded-md border border-stone/80 bg-paper p-5">
+                <div key={item.label} className="border-l-4 border-stone bg-paper p-5 shadow-sm">
                   <Icon aria-hidden="true" className="h-5 w-5 text-moss" />
-                  <p className="mt-4 text-sm font-semibold uppercase tracking-[0.12em] text-steel">
-                    {item.label}
-                  </p>
+                  <p className="mt-4 text-sm font-semibold uppercase text-steel">{item.label}</p>
                   <p className="mt-2 text-base font-semibold leading-6 text-ink">{item.value}</p>
                 </div>
               );
@@ -53,32 +62,24 @@ export default function AProposPage() {
       </section>
 
       <section className="bg-linen py-14 sm:py-16">
-        <div className="container-shell grid gap-8 md:grid-cols-3">
+        <div className="container-shell grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
           <div>
-            <h2 className="text-xl font-semibold text-ink">Matériaux</h2>
-            <p className="mt-3 text-sm leading-6 text-steel">
-              Bois, PVC et aluminium permettent de répondre à différents besoins :
-              chaleur du matériau, facilité d'entretien, finesse des profils ou
-              performance thermique.
-            </p>
+            <p className="text-sm font-semibold uppercase text-moss">Façon de travailler</p>
+            <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+              Ce qui doit se décider avant le devis.
+            </h2>
           </div>
-          <div>
-            <h2 className="text-xl font-semibold text-ink">Approche</h2>
-            <p className="mt-3 text-sm leading-6 text-steel">
-              Conseil, organisation, ponctualité et finitions propres sont les
-              qualités régulièrement mises en avant dans les avis clients.
-            </p>
-          </div>
-          <div>
-            <h2 className="text-xl font-semibold text-ink">Choix produits</h2>
-            <p className="mt-3 text-sm leading-6 text-steel">
-              Les solutions sont choisies selon le logement, le matériau souhaité,
-              le niveau d'entretien et le rendu attendu.
-            </p>
+          <div className="divide-y divide-stone/80 border-y border-stone/80">
+            {workingRules.map((rule) => (
+              <p key={rule} className="flex gap-3 py-5 leading-7 text-steel">
+                <CheckCircle2 aria-hidden="true" className="mt-1 h-5 w-5 shrink-0 text-moss" />
+                {rule}
+              </p>
+            ))}
           </div>
         </div>
       </section>
-      <ContactCTA />
+      <ContactCTA title="Vous voulez savoir si le chantier rentre dans la zone ?" text="Appelez avec la commune et deux photos. La première réponse doit être claire, pas décorative." />
     </>
   );
 }

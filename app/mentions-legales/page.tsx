@@ -18,7 +18,7 @@ export default function MentionsLegalesPage() {
       <section className="py-12 sm:py-16">
         <div className="container-shell max-w-4xl">
           <SectionTitle as="h1" eyebrow="Informations légales" title="Mentions légales" />
-          <div className="mt-8 space-y-8 rounded-md border border-stone/80 bg-paper p-6 leading-7 text-steel">
+          <div className="mt-8 space-y-8 border-y border-stone/80 bg-paper py-6 leading-7 text-steel">
             <section>
               <h2 className="text-xl font-semibold text-ink">Éditeur du site</h2>
               <ul className="mt-4 space-y-2">

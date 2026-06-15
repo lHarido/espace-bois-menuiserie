@@ -15,7 +15,7 @@ export default function PolitiqueConfidentialitePage() {
       <section className="py-12 sm:py-16">
         <div className="container-shell max-w-4xl">
           <SectionTitle as="h1" eyebrow="Données personnelles" title="Politique de confidentialité" />
-          <div className="mt-8 space-y-8 rounded-md border border-stone/80 bg-paper p-6 leading-7 text-steel">
+          <div className="mt-8 space-y-8 border-y border-stone/80 bg-paper py-6 leading-7 text-steel">
             <section>
               <h2 className="text-xl font-semibold text-ink">Données collectées</h2>
               <p className="mt-4">

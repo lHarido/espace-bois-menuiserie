@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { MapPin, Phone } from "lucide-react";
+import { Clock, MapPin, Phone, WalletCards } from "lucide-react";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { BusinessHours } from "@/components/BusinessHours";
 import { ContactForm } from "@/components/ContactForm";
-import { SectionTitle } from "@/components/SectionTitle";
 import { company, fullAddress } from "@/lib/company";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Contact menuisier autour de Valserhône",
   description:
-    "Contactez Espace Bois Menuiserie autour de Valserhône : téléphone, adresse, horaires et demande pour vos projets de menuiserie.",
+    "Contactez Espace Bois Menuiserie autour de Valserhône : téléphone, zone d'intervention, horaires et préparation de demande.",
 };
 
 export default function ContactPage() {
@@ -21,53 +20,36 @@ export default function ContactPage() {
       <Breadcrumbs items={[{ label: "Contact" }]} />
       <section className="py-12 sm:py-16">
         <div className="container-shell">
-          <SectionTitle as="h1" eyebrow="Contact" title="Parlez de votre projet de menuiserie">
-            <p>
-              Le plus rapide : appelez avec la commune, deux photos et les
-              dimensions approximatives. Le formulaire sert surtout à structurer
-              les infos avant l'échange.
-            </p>
-          </SectionTitle>
+          <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
+            <div>
+              <p className="text-sm font-semibold uppercase text-moss">Contact</p>
+              <h1 className="mt-3 font-display text-4xl font-semibold leading-tight text-ink sm:text-5xl">
+                Le plus rapide : appeler avec deux photos.
+              </h1>
+              <p className="mt-5 leading-7 text-steel">
+                Donnez la commune du chantier, le type de menuiserie et une mesure
+                approximative. Le premier échange sert à savoir si la demande est
+                dans la bonne zone et quelle solution mérite d'être étudiée.
+              </p>
 
-          <div className="mt-9 grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-            <div className="space-y-6">
-              <div className="rounded-md border border-stone/80 bg-paper p-5 shadow-sm">
-                <h2 className="text-xl font-semibold text-ink">Coordonnées</h2>
+              <div className="mt-8 border-y border-stone/80 py-5">
+                <a
+                  href={company.phoneHref}
+                  className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md bg-ink px-5 py-3 text-sm font-semibold text-paper transition hover:bg-moss sm:w-auto"
+                >
+                  <Phone aria-hidden="true" className="h-4 w-4" />
+                  Appeler le {company.phone}
+                </a>
                 <div className="mt-5 space-y-4 text-sm leading-6 text-steel">
-                  <p className="flex gap-3">
-                    <Phone aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-moss" />
-                    <a className="font-semibold text-ink hover:text-moss" href={company.phoneHref}>
-                      {company.phone}
-                    </a>
-                  </p>
                   <p className="flex gap-3">
                     <MapPin aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-moss" />
                     <span>{fullAddress}</span>
                   </p>
+                  <p className="flex gap-3">
+                    <WalletCards aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-moss" />
+                    <span>Paiements : {company.payments.join(", ")}</span>
+                  </p>
                 </div>
-                <a
-                  href={company.phoneHref}
-                  className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-md bg-moss px-5 py-3 text-sm font-semibold text-white transition hover:bg-ink"
-                >
-                  <Phone aria-hidden="true" className="h-4 w-4" />
-                  Appeler maintenant
-                </a>
-              </div>
-
-              <div>
-                <h2 className="mb-3 text-xl font-semibold text-ink">Horaires</h2>
-                <BusinessHours />
-              </div>
-
-              <div className="rounded-md border border-stone/80 bg-paper p-5">
-                <h2 className="text-xl font-semibold text-ink">Moyens de paiement</h2>
-                <ul className="mt-4 flex flex-wrap gap-2">
-                  {company.payments.map((payment) => (
-                    <li key={payment} className="rounded-md bg-linen px-3 py-2 text-sm font-medium text-ink">
-                      {payment}
-                    </li>
-                  ))}
-                </ul>
               </div>
             </div>
 
@@ -76,10 +58,19 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <section className="bg-linen py-12">
-        <div className="container-shell">
-          <h2 className="mb-4 text-xl font-semibold text-ink">Adresse</h2>
-          <div className="overflow-hidden rounded-md border border-stone/80 bg-paper">
+      <section className="bg-linen py-12 sm:py-14">
+        <div className="container-shell grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
+          <div>
+            <p className="text-sm font-semibold uppercase text-moss">Horaires & adresse</p>
+            <h2 className="mt-3 flex items-center gap-3 text-2xl font-semibold text-ink">
+              <Clock aria-hidden="true" className="h-6 w-6 text-moss" />
+              Quand appeler
+            </h2>
+            <div className="mt-5">
+              <BusinessHours />
+            </div>
+          </div>
+          <div className="overflow-hidden border border-stone/80 bg-paper">
             <iframe
               title="Carte de localisation Espace Bois Menuiserie"
               src={`https://www.google.com/maps?q=${mapQuery}&output=embed`}
