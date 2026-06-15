@@ -8,7 +8,7 @@ import { projectShowcase } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Réalisations et inspirations menuiserie",
   description:
-    "Exemples de projets pour présenter les savoir-faire d'Espace Bois Menuiserie : fenêtres, volets roulants, escalier, parquet, dressing et porte de garage.",
+    "Exemples de rendus pour se projeter : fenêtres aluminium RAL 7016, PVC blanc, volets roulants, escalier, parquet, dressing et porte de garage.",
 };
 
 export default function RealisationsPage() {
@@ -17,11 +17,10 @@ export default function RealisationsPage() {
       <Breadcrumbs items={[{ label: "Réalisations" }]} />
       <section className="py-12 sm:py-16">
         <div className="container-shell">
-          <SectionTitle as="h1" eyebrow="Réalisations" title="Exemples de projets pour se projeter">
+          <SectionTitle as="h1" eyebrow="Réalisations" title="Des finitions sobres pour visualiser le résultat">
             <p>
-              Fenêtres, volets, escalier, parquet, dressing ou porte de garage :
-              ces aperçus montrent les types de travaux que l'entreprise peut
-              mettre en avant.
+              Ces exemples aident à imaginer le rendu d'une rénovation : menuiseries
+              aluminium, PVC blanc, volets intégrés, bois intérieur ou porte de garage.
             </p>
           </SectionTitle>
           <div className="mt-9 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -31,7 +30,7 @@ export default function RealisationsPage() {
           </div>
         </div>
       </section>
-      <ContactCTA title="Un projet similaire à préparer ?" />
+      <ContactCTA title="Un rendu similaire vous intéresse ?" />
     </>
   );
 }

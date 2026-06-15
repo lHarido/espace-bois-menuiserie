@@ -6,11 +6,11 @@ import { company, fullAddress } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Mentions légales",
   description:
-    "Mentions légales d'Espace Bois Menuiserie : SIREN, SIRET, TVA, siège social, directeur de publication et coordonnées à compléter.",
+    "Mentions légales d'Espace Bois Menuiserie : SIREN, SIRET, TVA, siège social, directeur de publication et hébergement.",
 };
 
 export default function MentionsLegalesPage() {
-  const contactEmail = process.env.CONTACT_EMAIL ?? "à compléter";
+  const contactEmail = process.env.CONTACT_EMAIL ?? null;
 
   return (
     <>
@@ -31,21 +31,22 @@ export default function MentionsLegalesPage() {
                 <li>Siège social : {fullAddress}</li>
                 <li>Directeur de publication : {company.manager}</li>
                 <li>Téléphone : {company.phone}</li>
-                <li>E-mail : {contactEmail}</li>
+                {contactEmail ? <li>E-mail : {contactEmail}</li> : null}
               </ul>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-ink">Hébergement</h2>
               <p className="mt-4">
-                Hébergeur : à compléter selon l'hébergement réel avant mise en ligne.
+                Ce site statique est hébergé par GitHub Pages, service fourni par
+                GitHub, Inc.
               </p>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-ink">Propriété intellectuelle</h2>
               <p className="mt-4">
-                Les contenus du site sont destinés à présenter l'activité de
-                l'entreprise. Les photos de réalisations devront être ajoutées
-                uniquement après autorisation et validation.
+                Les contenus, textes et visuels du site sont destinés à présenter
+                l'activité de l'entreprise. Toute réutilisation doit faire l'objet
+                d'une autorisation préalable.
               </p>
             </section>
           </div>

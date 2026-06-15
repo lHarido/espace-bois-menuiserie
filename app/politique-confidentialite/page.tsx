@@ -34,15 +34,15 @@ export default function PolitiqueConfidentialitePage() {
             <section>
               <h2 className="text-xl font-semibold text-ink">Durée de conservation</h2>
               <p className="mt-4">
-                La durée de conservation est à compléter avant mise en ligne selon
-                l'organisation retenue par l'entreprise.
+                Les informations transmises sont conservées uniquement le temps
+                nécessaire au traitement de la demande et au suivi de l'échange.
               </p>
             </section>
             <section>
               <h2 className="text-xl font-semibold text-ink">Droit de suppression</h2>
               <p className="mt-4">
-                L'adresse de contact à utiliser pour demander la suppression des
-                données est à compléter avant mise en ligne.
+                Vous pouvez demander la suppression des informations transmises en
+                contactant directement l'entreprise par ses coordonnées publiques.
               </p>
             </section>
             <section>

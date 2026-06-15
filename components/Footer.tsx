@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { MapPin, Phone } from "lucide-react";
-import { company, fullAddress, sourceLinks } from "@/lib/company";
+import { company, fullAddress } from "@/lib/company";
 
 const footerNav = [
   { label: "Prestations", href: "/prestations" },
@@ -57,7 +57,7 @@ export function Footer() {
           <ul className="mt-4 space-y-3 text-sm text-steel">
             <li>SIREN : {company.siren}</li>
             <li>APE : {company.ape}</li>
-            <li>Certification RGE indiquée, à vérifier</li>
+            <li>Qualification : {company.certification}</li>
             <li>
               <Link href="/mentions-legales" className="hover:text-moss">
                 Mentions légales
@@ -74,17 +74,7 @@ export function Footer() {
       <div className="border-t border-stone/70 py-5">
         <div className="container-shell flex flex-col gap-3 text-xs text-steel md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} {company.name}. Tous droits réservés.</p>
-          <p>
-            Sources à vérifier avant mise en ligne :{" "}
-            {sourceLinks.map((source, index) => (
-              <span key={source.href}>
-                <a href={source.href} className="hover:text-moss" rel="noreferrer" target="_blank">
-                  {source.label}
-                </a>
-                {index < sourceLinks.length - 1 ? ", " : "."}
-              </span>
-            ))}
-          </p>
+          <p>Site vitrine hébergé sur GitHub Pages.</p>
         </div>
       </div>
     </footer>

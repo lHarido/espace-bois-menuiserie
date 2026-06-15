@@ -35,7 +35,7 @@ export default function AProposPage() {
               { label: "Dirigeant", value: company.manager, icon: UserRound },
               { label: "Création", value: company.createdAt, icon: CalendarDays },
               { label: "Statut", value: company.legalForm, icon: Building2 },
-              { label: "Certification", value: "Qualibat RGE indiquée, à vérifier", icon: BadgeCheck },
+              { label: "Qualification", value: company.certification, icon: BadgeCheck },
             ].map((item) => {
               const Icon = item.icon;
               return (
@@ -66,14 +66,14 @@ export default function AProposPage() {
             <h2 className="text-xl font-semibold text-ink">Approche</h2>
             <p className="mt-3 text-sm leading-6 text-steel">
               Conseil, organisation, ponctualité et finitions propres sont les
-              qualités mises en avant dans les extraits d'avis clients fournis.
+              qualités régulièrement mises en avant dans les avis clients.
             </p>
           </div>
           <div>
-            <h2 className="text-xl font-semibold text-ink">Fournisseur mentionné</h2>
+            <h2 className="text-xl font-semibold text-ink">Choix produits</h2>
             <p className="mt-3 text-sm leading-6 text-steel">
-              La marque {company.supplier} est mentionnée dans les informations
-              fournies comme marque ou fournisseur à présenter avec prudence.
+              Les solutions sont choisies selon le logement, le matériau souhaité,
+              le niveau d'entretien et le rendu attendu.
             </p>
           </div>
         </div>

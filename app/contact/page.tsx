@@ -23,9 +23,9 @@ export default function ContactPage() {
         <div className="container-shell">
           <SectionTitle as="h1" eyebrow="Contact" title="Parlez de votre projet de menuiserie">
             <p>
-              Pour une demande urgente ou un premier échange, le téléphone reste le
-              moyen le plus direct. Le formulaire est préparé pour une intégration
-              future avec un service d'envoi.
+              Pour gagner du temps, préparez le type de projet, la commune du
+              chantier et quelques dimensions. Le téléphone reste le moyen le plus
+              direct pour valider la faisabilité.
             </p>
           </SectionTitle>
 

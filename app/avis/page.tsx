@@ -9,7 +9,7 @@ import { ratings, reviews } from "@/lib/company";
 export const metadata: Metadata = {
   title: "Avis clients",
   description:
-    "Notes fournies et extraits d'avis clients pour Espace Bois Menuiserie : PagesJaunes 4,2/5 sur 7 avis et Google 5/5 sur 5 avis.",
+    "Notes et extraits d'avis clients pour Espace Bois Menuiserie : PagesJaunes 4,2/5 sur 7 avis et Google 5/5 sur 5 avis.",
 };
 
 export default function AvisPage() {
@@ -18,10 +18,10 @@ export default function AvisPage() {
       <Breadcrumbs items={[{ label: "Avis clients" }]} />
       <section className="py-12 sm:py-16">
         <div className="container-shell">
-          <SectionTitle as="h1" eyebrow="Avis clients" title="Notes et extraits d'avis fournis">
+          <SectionTitle as="h1" eyebrow="Avis clients" title="Une réputation construite sur le soin du travail">
             <p>
-              Les avis présentés sont des extraits issus des informations disponibles
-              au moment de la création du site.
+              Les retours clients mettent en avant l'organisation, les conseils,
+              les délais respectés et la qualité de pose.
             </p>
           </SectionTitle>
           <div className="mt-8 grid gap-4 sm:grid-cols-2">
@@ -44,7 +44,7 @@ export default function AvisPage() {
           </div>
         </div>
       </section>
-      <ContactCTA title="Vous avez un projet ? Contactez Espace Bois Menuiserie." />
+      <ContactCTA title="Vous voulez un chantier aussi soigné ?" />
     </>
   );
 }

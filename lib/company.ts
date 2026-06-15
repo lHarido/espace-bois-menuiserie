@@ -4,6 +4,7 @@ import {
   DoorOpen,
   Hammer,
   Home,
+  MessageSquareText,
   PanelsTopLeft,
   Ruler,
   ShieldCheck,
@@ -42,6 +43,19 @@ export type Service = {
   icon: LucideIcon;
 };
 
+export type VisitorPersona = {
+  title: string;
+  need: string;
+  reassurance: string;
+  icon: LucideIcon;
+};
+
+export type QualitySignal = {
+  title: string;
+  text: string;
+  icon: LucideIcon;
+};
+
 export const company = {
   name: "ESPACE BOIS MENUISERIE",
   tagline: "Menuiserie bois, PVC & aluminium à Confort",
@@ -65,7 +79,7 @@ export const company = {
     country: "France",
   },
   certification:
-    "Qualibat RGE indiquee dans les informations fournies, a verifier avant mise en ligne.",
+    "Qualibat RGE",
   supplier: "BOUVET",
   payments: ["Chèque", "Espèces", "Virement bancaire"],
   areas: [
@@ -168,11 +182,58 @@ export const openingHours: OpeningHours[] = [
 
 export const trustBadges = [
   { label: "Depuis 2014", icon: BriefcaseBusiness },
-  { label: "Qualibat RGE", icon: BadgeCheck },
+  { label: "Pose soignée", icon: ShieldCheck },
+  { label: "Conseil matériaux", icon: Hammer },
   { label: "4,2/5 PagesJaunes", icon: Star },
   { label: "5/5 Google", icon: Star },
-  { label: "Travail soigné", icon: ShieldCheck },
-  { label: "Conseils personnalisés", icon: Hammer },
+];
+
+export const visitorPersonas: VisitorPersona[] = [
+  {
+    title: "Remplacer des fenêtres ou volets",
+    need:
+      "Améliorer le confort, l'isolation et l'esthétique sans perdre de temps dans les choix techniques.",
+    reassurance:
+      "Conseil sur PVC, aluminium RAL 7016 ou bois, avec pose en rénovation et finitions propres.",
+    icon: PanelsTopLeft,
+  },
+  {
+    title: "Rénover plusieurs menuiseries",
+    need:
+      "Coordonner fenêtres, porte de garage, garde-corps, parquet ou escalier dans un chantier cohérent.",
+    reassurance:
+      "Un interlocuteur local qui organise les priorités et garde une lecture simple du projet.",
+    icon: Home,
+  },
+  {
+    title: "Créer un aménagement sur mesure",
+    need:
+      "Gagner en rangement ou en confort avec un escalier, un dressing, un placard ou un parquet bien intégré.",
+    reassurance:
+      "Prise de cotes, conseil d'usage et attention portée aux alignements, aux matières et aux détails.",
+    icon: Ruler,
+  },
+];
+
+export const qualitySignals: QualitySignal[] = [
+  {
+    title: "Finitions visibles",
+    text:
+      "Alignements, raccords, seuils et habillages comptent autant que le produit posé.",
+    icon: BadgeCheck,
+  },
+  {
+    title: "Conseil clair",
+    text:
+      "Le choix du matériau est expliqué selon l'usage, l'entretien, le budget et le style de la maison.",
+    icon: MessageSquareText,
+  },
+  {
+    title: "Chantier propre",
+    text:
+      "Organisation, respect du logement et contrôle final pour laisser une installation prête à vivre.",
+    icon: ShieldCheck,
+  },
 ];
 
 export const services: Service[] = [
@@ -229,7 +290,7 @@ export const services: Service[] = [
     shortTitle: "Rénovation énergétique",
     description:
       "Accompagnement sur le remplacement des menuiseries pour améliorer la performance thermique du logement.",
-    items: ["Fenêtres isolantes", "Portes performantes", "Volets adaptés", "Certification RGE à vérifier"],
+    items: ["Fenêtres isolantes", "Portes performantes", "Volets adaptés", "Confort thermique"],
     icon: BadgeCheck,
   },
 ];

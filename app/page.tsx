@@ -1,13 +1,23 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle2, MapPin, Phone } from "lucide-react";
+import { ArrowRight, MapPin, Phone, Star } from "lucide-react";
 import { ContactCTA } from "@/components/ContactCTA";
 import { HeroCraftVisual } from "@/components/HeroCraftVisual";
 import { ProcessSteps } from "@/components/ProcessSteps";
+import { ProjectPlaceholder } from "@/components/ProjectPlaceholder";
 import { ReviewCard } from "@/components/ReviewCard";
 import { SectionTitle } from "@/components/SectionTitle";
 import { ServiceCard } from "@/components/ServiceCard";
 import { TrustBadge } from "@/components/TrustBadge";
-import { company, reviews, services, trustBadges } from "@/lib/company";
+import {
+  company,
+  projectShowcase,
+  qualitySignals,
+  ratings,
+  reviews,
+  services,
+  trustBadges,
+  visitorPersonas,
+} from "@/lib/company";
 
 export default function HomePage() {
   return (
@@ -20,11 +30,11 @@ export default function HomePage() {
               Artisan menuisier basé à Confort, dans l'Ain
             </p>
             <h1 className="max-w-4xl break-words font-display text-3xl font-semibold leading-tight text-ink sm:text-5xl sm:leading-[1.04]">
-              Menuiserie bois, PVC & aluminium à Confort
+              Fenêtres, volets et menuiseries posés proprement à Confort
             </h1>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-steel">
-              Fenêtres, portes, volets, escaliers, parquets et agencements sur
-              mesure pour vos projets de rénovation et d'aménagement.
+              Bois, PVC ou aluminium : un artisan local pour remplacer vos
+              ouvertures, rénover vos intérieurs et obtenir des finitions nettes.
             </p>
             <div className="mt-6 flex min-w-0 flex-col gap-3 sm:flex-row">
               <a
@@ -35,10 +45,10 @@ export default function HomePage() {
                 <span className="min-w-0 truncate sm:whitespace-nowrap">Appeler le {company.phone}</span>
               </a>
               <Link
-                href="/prestations"
+                href="/contact"
                 className="inline-flex min-h-12 w-full min-w-0 items-center justify-center gap-2 rounded-md border border-bark/35 bg-paper px-5 py-3 text-sm font-semibold text-ink transition hover:bg-white sm:w-auto"
               >
-                <span className="min-w-0 truncate sm:whitespace-nowrap">Voir les prestations</span>
+                <span className="min-w-0 truncate sm:whitespace-nowrap">Décrire mon projet</span>
                 <ArrowRight aria-hidden="true" className="h-4 w-4" />
               </Link>
             </div>
@@ -55,32 +65,84 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-14 sm:py-18">
-        <div className="container-shell grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
-          <SectionTitle eyebrow="Entreprise locale" title="Un interlocuteur de proximité pour vos menuiseries">
+      <section className="py-14 sm:py-16">
+        <div className="container-shell">
+          <SectionTitle eyebrow="Vos besoins" title="Ce que vous voulez savoir avant de choisir un menuisier">
             <p>
-              {company.name}, dirigée par {company.manager}, intervient sur des
-              projets de menuiserie intérieure et extérieure : remplacement de
-              fenêtres, pose de volets roulants, porte d'entrée, porte de garage,
-              escalier sur mesure, parquet, dressing ou placard.
-            </p>
-            <p className="mt-4">
-              L'entreprise est créée depuis 2014 et basée à Confort. Le contenu
-              met en avant une approche sobre : écoute, conseil, organisation et
-              travail soigné.
+              Avant d'appeler, vous avez besoin de savoir si votre projet est compris,
+              si le chantier sera propre et si le rendu sera à la hauteur.
             </p>
           </SectionTitle>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {[
-              "Bois, PVC et aluminium",
-              "Pose et fourniture de menuiseries",
-              "Rénovation énergétique liée aux ouvertures",
-              "Agencements intérieurs et extérieurs",
-            ].map((item) => (
-              <div key={item} className="flex gap-3 rounded-md border border-stone/80 bg-paper p-5 shadow-sm">
-                <CheckCircle2 aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-moss" />
-                <p className="text-base font-semibold leading-6 text-ink">{item}</p>
-              </div>
+          <div className="mt-8 grid gap-5 md:grid-cols-3">
+            {visitorPersonas.map((persona) => {
+              const Icon = persona.icon;
+
+              return (
+                <article key={persona.title} className="rounded-md border border-stone/80 bg-paper p-5 shadow-sm">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-md bg-sage text-moss">
+                    <Icon aria-hidden="true" className="h-5 w-5" />
+                  </div>
+                  <h3 className="mt-5 text-lg font-semibold leading-snug text-ink">{persona.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-steel">{persona.need}</p>
+                  <p className="mt-4 border-t border-stone/70 pt-4 text-sm font-medium leading-6 text-ink">
+                    {persona.reassurance}
+                  </p>
+                </article>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-linen py-14 sm:py-16">
+        <div className="container-shell grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+          <SectionTitle eyebrow="Qualité" title="Ce qui doit se voir sur un chantier terminé">
+            <p>
+              La qualité ne se résume pas au matériau. Elle se voit dans la pose,
+              les raccords, les conseils donnés avant le devis et l'état du logement
+              à la fin de l'intervention.
+            </p>
+          </SectionTitle>
+          <div className="grid gap-4 sm:grid-cols-3 lg:grid-cols-1">
+            {qualitySignals.map((signal) => {
+              const Icon = signal.icon;
+
+              return (
+                <div key={signal.title} className="flex gap-4 rounded-md border border-stone/80 bg-paper p-5 shadow-sm">
+                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-ink text-paper">
+                    <Icon aria-hidden="true" className="h-5 w-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-ink">{signal.title}</h3>
+                    <p className="mt-1 text-sm leading-6 text-steel">{signal.text}</p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-14 sm:py-16">
+        <div className="container-shell">
+          <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+            <SectionTitle eyebrow="Réalisations" title="Des rendus sobres pour se projeter">
+              <p>
+                Aluminium anthracite, PVC blanc, escalier bois ou agencement :
+                ces exemples donnent une idée claire du niveau de finition recherché.
+              </p>
+            </SectionTitle>
+            <Link
+              href="/realisations"
+              className="inline-flex min-h-11 items-center justify-center gap-2 rounded-md border border-bark/30 bg-paper px-4 py-2 text-sm font-semibold text-ink hover:bg-white"
+            >
+              Voir les réalisations
+              <ArrowRight aria-hidden="true" className="h-4 w-4" />
+            </Link>
+          </div>
+          <div className="mt-9 grid gap-5 md:grid-cols-3">
+            {projectShowcase.slice(0, 3).map((project, index) => (
+              <ProjectPlaceholder key={project.title} {...project} priority={index === 0} />
             ))}
           </div>
         </div>
@@ -89,11 +151,10 @@ export default function HomePage() {
       <section className="bg-linen py-14 sm:py-16" id="prestations">
         <div className="container-shell">
           <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-            <SectionTitle eyebrow="Prestations" title="Des travaux de menuiserie pour l'habitat">
+            <SectionTitle eyebrow="Prestations" title="Les demandes les plus courantes">
               <p>
-                Fenêtres PVC, bois ou aluminium, volets roulants, porte de garage,
-                escalier sur mesure, parquet ou dressing : chaque projet demande
-                une solution adaptée au logement.
+                Repérez rapidement le bon point d'entrée, puis appelez pour valider
+                le matériau, les contraintes et les prochaines étapes.
               </p>
             </SectionTitle>
             <Link
@@ -104,8 +165,8 @@ export default function HomePage() {
               <ArrowRight aria-hidden="true" className="h-4 w-4" />
             </Link>
           </div>
-          <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
-            {services.slice(0, 6).map((service) => (
+          <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+            {services.slice(0, 4).map((service) => (
               <ServiceCard key={service.title} service={service} compact />
             ))}
           </div>
@@ -117,9 +178,8 @@ export default function HomePage() {
           <div className="mb-9 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
             <SectionTitle eyebrow="Méthode" title="Une approche claire, du premier échange à la pose">
               <p>
-                Une présentation volontairement simple pour refléter l'essentiel :
-                comprendre le besoin, conseiller justement et livrer une menuiserie
-                proprement posée.
+                Après le premier appel : besoin clarifié, solution choisie, devis
+                préparé puis pose contrôlée.
               </p>
             </SectionTitle>
           </div>
@@ -129,13 +189,28 @@ export default function HomePage() {
 
       <section className="bg-paper py-14 sm:py-16">
         <div className="container-shell">
-          <SectionTitle eyebrow="Avis clients" title="Extraits d'avis clients fournis">
+          <SectionTitle eyebrow="Avis clients" title="Ce que les clients retiennent">
             <p>
-              Les notes et avis ci-dessous reprennent uniquement les informations
-              fournies pour la création du site.
+              Les avis mettent surtout en avant la ponctualité, le conseil,
+              l'organisation et la propreté du travail.
             </p>
           </SectionTitle>
-          <div className="mt-8 grid gap-5 md:grid-cols-3">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2">
+            {ratings.map((rating) => (
+              <div key={rating.source} className="flex items-center justify-between gap-4 rounded-md border border-stone/80 bg-linen p-5">
+                <div>
+                  <p className="text-sm font-medium text-steel">{rating.source}</p>
+                  <p className="mt-1 text-2xl font-semibold text-ink">{rating.value}</p>
+                </div>
+                <div className="flex gap-1 text-timber" aria-label={`Note ${rating.value}`}>
+                  {Array.from({ length: 5 }).map((_, index) => (
+                    <Star key={index} aria-hidden="true" className="h-4 w-4 fill-current" />
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="mt-5 grid gap-5 md:grid-cols-3">
             {reviews.map((review) => (
               <ReviewCard key={`${review.source}-${review.date}`} review={review} />
             ))}
@@ -148,8 +223,8 @@ export default function HomePage() {
           <SectionTitle eyebrow="Zone d'intervention" title="Un menuisier à Confort, près de Valserhône">
             <p>
               L'ancrage local est centré sur Confort, Valserhône,
-              Bellegarde-sur-Valserine et l'Ain. La Haute-Savoie peut être évoquée
-              selon les projets, sans engagement géographique non confirmé.
+              Bellegarde-sur-Valserine et l'Ain. Pour les communes voisines, le
+              plus simple est d'appeler pour confirmer la faisabilité du chantier.
             </p>
           </SectionTitle>
           <div className="grid gap-3 sm:grid-cols-2">
@@ -163,7 +238,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      <ContactCTA />
+      <ContactCTA
+        title="Vous voulez savoir si votre projet est faisable ?"
+        text="Appelez directement avec quelques photos, dimensions ou priorités. L'objectif est de comprendre le besoin avant de parler matériau ou devis."
+      />
     </>
   );
 }

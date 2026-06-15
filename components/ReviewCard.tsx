@@ -18,7 +18,7 @@ export function ReviewCard({ review }: ReviewCardProps) {
       </div>
       <blockquote className="flex-1 text-sm leading-6 text-ink">“{review.quote}”</blockquote>
       <p className="mt-5 border-t border-stone/70 pt-4 text-sm text-steel">
-        Source indiquée : {review.source}, avis du {review.date}.
+        {review.source}, avis du {review.date}.
       </p>
     </article>
   );

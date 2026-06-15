@@ -19,10 +19,8 @@ export default function PrestationsPage() {
         <div className="container-shell">
           <SectionTitle as="h1" eyebrow="Prestations" title="Menuiserie intérieure et extérieure à Confort">
             <p>
-              Espace Bois Menuiserie accompagne les projets de rénovation et
-              d'aménagement : pose fenêtres Ain, fenêtres PVC bois aluminium,
-              volets roulants, porte de garage, escalier sur mesure, parquet et
-              dressing sur mesure.
+              Choisissez votre point d'entrée selon l'objectif du chantier :
+              confort thermique, sécurité, accès, rangement ou finitions intérieures.
             </p>
           </SectionTitle>
           <div className="mt-9 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
@@ -32,7 +30,7 @@ export default function PrestationsPage() {
           </div>
         </div>
       </section>
-      <ContactCTA title="Besoin d'un conseil sur une prestation ?" />
+      <ContactCTA title="Vous hésitez entre deux solutions ?" text="Un appel permet de comparer le PVC, l'aluminium, le bois ou les options de pose selon votre logement." />
     </>
   );
 }
