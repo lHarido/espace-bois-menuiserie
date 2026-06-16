@@ -265,7 +265,7 @@ export const services: Service[] = [
     description:
       "Remplacement et pose de fenêtres, baies vitrées et huisseries adaptées au bâti, avec attention portée à l'isolation et aux finitions.",
     items: ["Fenêtres bois, PVC et aluminium", "Baies vitrées", "Huisseries", "Pose en rénovation"],
-    imageSrc: "/images/fenetres-alu-7016.png",
+    imageSrc: "/images/fenetres-alu-7016.webp",
     imageAlt: "Fenêtres aluminium gris anthracite RAL 7016 sur façade claire",
     visualLabel: "Alu RAL 7016",
     icon: PanelsTopLeft,
@@ -276,7 +276,7 @@ export const services: Service[] = [
     description:
       "Solutions d'accès robustes et soignées pour améliorer le confort, la sécurité et l'esthétique de l'habitat.",
     items: ["Portes d'entrée", "Portes intérieures", "Portes de garage", "Portails"],
-    imageSrc: "/images/porte-garage-bois.png",
+    imageSrc: "/images/porte-garage-bois.webp",
     imageAlt: "Porte de garage finition bois sur une maison rénovée",
     visualLabel: "Accès maison",
     icon: DoorOpen,
@@ -287,7 +287,7 @@ export const services: Service[] = [
     description:
       "Pose de volets et volets roulants pour protéger les ouvertures, gagner en confort et piloter la lumière au quotidien.",
     items: ["Volets roulants", "Volets battants", "Protections des ouvertures", "Conseil produit"],
-    imageSrc: "/images/volets-pvc-blanc.png",
+    imageSrc: "/images/volets-pvc-blanc.webp",
     imageAlt: "Fenêtres PVC blanc avec volets roulants intégrés",
     visualLabel: "PVC blanc",
     icon: ShieldCheck,
@@ -298,7 +298,7 @@ export const services: Service[] = [
     description:
       "Travaux de menuiserie intérieure pour créer des espaces durables, chaleureux et bien intégrés à la maison.",
     items: ["Escaliers sur mesure", "Pose de parquets", "Encadrement de cheminée", "Finitions bois"],
-    imageSrc: "/images/escalier-bois.png",
+    imageSrc: "/images/escalier-bois.webp",
     imageAlt: "Escalier intérieur en bois clair sur mesure",
     visualLabel: "Bois intérieur",
     icon: Ruler,
@@ -309,7 +309,7 @@ export const services: Service[] = [
     description:
       "Création de rangements sur mesure pour optimiser chaque volume avec une conception simple, pratique et nette.",
     items: ["Dressings", "Placards", "Rangements intégrés", "Agencement intérieur"],
-    imageSrc: "/images/dressing-sur-mesure.png",
+    imageSrc: "/images/dressing-sur-mesure.webp",
     imageAlt: "Dressing en bois avec tiroirs et portes ouvertes",
     visualLabel: "Sur mesure",
     icon: Home,
@@ -320,7 +320,7 @@ export const services: Service[] = [
     description:
       "Aménagements extérieurs en bois, PVC ou aluminium, pensés pour résister aux usages et aux contraintes du lieu.",
     items: ["Garde-corps", "Grilles de défense", "Agencement extérieur", "Menuiseries extérieures"],
-    imageSrc: "/images/fenetres-baies.png",
+    imageSrc: "/images/fenetres-baies.webp",
     imageAlt: "Menuiseries bois sur façade en pierre claire",
     visualLabel: "Façade",
     icon: TreePine,
@@ -331,7 +331,7 @@ export const services: Service[] = [
     description:
       "Accompagnement sur le remplacement des menuiseries pour améliorer la performance thermique du logement.",
     items: ["Fenêtres isolantes", "Portes performantes", "Volets adaptés", "Isolation thermique"],
-    imageSrc: "/images/hero-menuiseries-alu-7016.png",
+    imageSrc: "/images/hero-menuiseries-alu-7016.webp",
     imageAlt: "Maison rénovée avec fenêtres aluminium gris anthracite et baie vitrée",
     visualLabel: "Confort thermique",
     icon: BadgeCheck,
@@ -343,7 +343,7 @@ export const projectShowcase = [
     title: "Remplacement de fenêtres et baies vitrées",
     description:
       "Rénovation avec fenêtres aluminium gris anthracite RAL 7016.",
-    imageSrc: "/images/fenetres-alu-7016.png",
+    imageSrc: "/images/fenetres-alu-7016.webp",
     imageAlt:
       "Fenêtres aluminium gris anthracite RAL 7016 sur une façade claire",
   },
@@ -351,7 +351,7 @@ export const projectShowcase = [
     title: "Pose de volets roulants",
     description:
       "Fenêtres PVC blanc et volets roulants intégrés sur façade claire.",
-    imageSrc: "/images/volets-pvc-blanc.png",
+    imageSrc: "/images/volets-pvc-blanc.webp",
     imageAlt:
       "Fenêtres PVC blanc avec volets roulants intégrés",
   },
@@ -359,28 +359,28 @@ export const projectShowcase = [
     title: "Escalier sur mesure",
     description:
       "Escalier en chêne avec garde-corps sobre et lignes précises.",
-    imageSrc: "/images/escalier-bois.png",
+    imageSrc: "/images/escalier-bois.webp",
     imageAlt: "Escalier intérieur en bois clair sur mesure",
   },
   {
     title: "Pose de parquet",
     description:
       "Parquet chêne posé avec soin dans une pièce lumineuse.",
-    imageSrc: "/images/parquet-chene.png",
+    imageSrc: "/images/parquet-chene.webp",
     imageAlt: "Parquet chêne en point de Hongrie dans un salon",
   },
   {
     title: "Dressing / placard sur mesure",
     description:
       "Rangement intégré en bois, pensé pour une chambre sobre et pratique.",
-    imageSrc: "/images/dressing-sur-mesure.png",
+    imageSrc: "/images/dressing-sur-mesure.webp",
     imageAlt: "Dressing en bois avec tiroirs et portes ouvertes",
   },
   {
     title: "Porte de garage",
     description:
       "Porte de garage finition bois sur une maison rénovée.",
-    imageSrc: "/images/porte-garage-bois.png",
+    imageSrc: "/images/porte-garage-bois.webp",
     imageAlt: "Porte de garage avec finition bois",
   },
 ];

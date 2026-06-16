@@ -34,7 +34,7 @@ export default function PrestationsPage() {
 
           <figure className="relative min-h-[360px] overflow-hidden border border-bark/20 bg-stone shadow-soft sm:min-h-[500px]">
             <Image
-              src={withBasePath("/images/fenetres-alu-7016.png")}
+              src={withBasePath("/images/fenetres-alu-7016.webp")}
               alt="Fenêtres aluminium gris anthracite RAL 7016 posées sur une façade claire"
               fill
               priority

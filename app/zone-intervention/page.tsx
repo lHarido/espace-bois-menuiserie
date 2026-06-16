@@ -136,7 +136,7 @@ export default function ZoneInterventionPage() {
 
           <figure className="relative min-h-[360px] overflow-hidden border border-bark/20 bg-stone shadow-soft sm:min-h-[500px]">
             <Image
-              src={withBasePath("/images/hero-menuiseries-alu-7016.png")}
+              src={withBasePath("/images/hero-menuiseries-alu-7016.webp")}
               alt="Maison rénovée avec fenêtres aluminium gris anthracite dans l'Ain"
               fill
               priority

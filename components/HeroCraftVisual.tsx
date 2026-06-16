@@ -6,7 +6,7 @@ export function HeroCraftVisual() {
     <figure className="relative w-full min-w-0 overflow-hidden rounded-md border border-bark/20 bg-paper p-2 shadow-soft">
       <div className="relative min-h-[330px] overflow-hidden rounded-md bg-stone sm:min-h-[430px]">
         <Image
-          src={withBasePath("/images/hero-menuiseries-alu-7016.png")}
+          src={withBasePath("/images/hero-menuiseries-alu-7016.webp")}
           alt="Façade rénovée avec fenêtres aluminium gris anthracite et baie vitrée"
           fill
           priority

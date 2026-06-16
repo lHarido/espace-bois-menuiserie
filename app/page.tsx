@@ -119,7 +119,7 @@ export default function HomePage() {
 
           <figure className="relative min-h-[320px] overflow-hidden border border-bark/20 bg-stone shadow-soft sm:min-h-[430px] lg:min-h-[590px]">
             <Image
-              src={withBasePath("/images/hero-menuiseries-alu-7016.png")}
+              src={withBasePath("/images/hero-menuiseries-alu-7016.webp")}
               alt="Façade rénovée avec fenêtres aluminium gris anthracite et baie vitrée"
               fill
               priority
