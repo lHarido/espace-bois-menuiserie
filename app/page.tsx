@@ -256,13 +256,15 @@ export default function HomePage() {
                 sizes="(min-width: 1024px) 58vw, 100vw"
                 className="object-cover transition duration-500 group-hover:scale-[1.03]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-ink/82 via-ink/16 to-transparent" aria-hidden="true" />
+              <div className="image-overlay-contrast absolute inset-0" aria-hidden="true" />
               <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8">
-                <p className="text-sm font-semibold uppercase text-timber">Fenêtres alu 7016</p>
-                <h3 className="mt-2 max-w-xl text-2xl font-semibold leading-tight sm:text-3xl">
-                  {mainProjects[0].title}
-                </h3>
-                <p className="mt-3 max-w-xl leading-7 text-paper/82">{mainProjects[0].description}</p>
+                <div className="image-caption-panel max-w-2xl p-4 sm:p-5">
+                  <p className="image-caption-kicker text-sm font-semibold uppercase">Fenêtres alu 7016</p>
+                  <h3 className="mt-2 max-w-xl text-2xl font-semibold leading-tight sm:text-3xl">
+                    {mainProjects[0].title}
+                  </h3>
+                  <p className="mt-3 max-w-xl leading-7 text-paper/86">{mainProjects[0].description}</p>
+                </div>
               </div>
             </Link>
 

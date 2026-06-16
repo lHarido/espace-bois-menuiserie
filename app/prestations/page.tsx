@@ -41,19 +41,21 @@ export default function PrestationsPage() {
               sizes="(min-width: 1024px) 55vw, 100vw"
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-ink/76 via-ink/10 to-transparent" aria-hidden="true" />
+            <div className="image-overlay-contrast absolute inset-0" aria-hidden="true" />
             <figcaption className="absolute inset-x-0 bottom-0 p-5 text-paper sm:p-7">
-              <p className="text-xs font-semibold uppercase leading-5 tracking-[0.12em] text-timber">
-                <span className="sm:hidden">Rendu menuiseries</span>
-                <span className="hidden sm:inline">Fenêtres, volets, finitions</span>
-              </p>
-              <p className="mt-2 max-w-lg text-2xl font-semibold leading-tight">
-                Voir le rendu final avant de parler produit.
-              </p>
-              <div className="mt-5 grid gap-2 text-sm text-paper/86 sm:grid-cols-3">
-                <span className="bg-ink/78 px-3 py-2 backdrop-blur">Alu RAL 7016</span>
-                <span className="bg-ink/78 px-3 py-2 backdrop-blur">PVC blanc</span>
-                <span className="bg-ink/78 px-3 py-2 backdrop-blur">Bois intérieur</span>
+              <div className="image-caption-panel max-w-2xl p-4 sm:p-5">
+                <p className="image-caption-kicker text-xs font-semibold uppercase leading-5 tracking-[0.12em]">
+                  <span className="sm:hidden">Rendu menuiseries</span>
+                  <span className="hidden sm:inline">Fenêtres, volets, finitions</span>
+                </p>
+                <p className="mt-2 max-w-lg text-2xl font-semibold leading-tight">
+                  Voir le rendu final avant de parler produit.
+                </p>
+                <div className="mt-5 grid gap-2 text-sm sm:grid-cols-3">
+                  <span className="image-caption-chip px-3 py-2">Alu RAL 7016</span>
+                  <span className="image-caption-chip px-3 py-2">PVC blanc</span>
+                  <span className="image-caption-chip px-3 py-2">Bois intérieur</span>
+                </div>
               </div>
             </figcaption>
           </figure>
