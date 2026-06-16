@@ -29,7 +29,7 @@ export function Header() {
             <span className="block truncate text-sm font-bold tracking-wide text-ink">
               {company.name}
             </span>
-            <span className="hidden text-xs text-steel sm:block">Ain + Pays de Gex</span>
+            <span className="hidden text-xs text-steel sm:block">Ain, Pays de Gex, Haute-Savoie</span>
           </span>
         </Link>
 

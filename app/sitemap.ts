@@ -16,7 +16,7 @@ const routes = [
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
-  const lastModified = new Date("2026-06-15");
+  const lastModified = new Date("2026-06-16");
 
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,

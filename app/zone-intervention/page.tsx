@@ -8,38 +8,97 @@ import { company, fullAddress } from "@/lib/company";
 import { withBasePath } from "@/lib/sitePath";
 
 export const metadata: Metadata = {
-  title: "Menuisier Ain, Pays de Gex et Haute-Savoie proche",
+  title: "Menuisier Ain, Haute-Savoie et Pays de Gex",
   description:
-    "Zone d'intervention Espace Bois Menuiserie : Valserhône, Ain, Pays de Gex, Bellegarde-sur-Valserine et Haute-Savoie proche pour fenêtres, volets, portes et menuiseries.",
+    "Menuisier à Confort près de Valserhône : pose de fenêtres, volets, portes et menuiseries dans l'Ain, le Pays de Gex et la Haute-Savoie proche.",
   keywords: [
+    "menuisier Ain 01",
     "menuisier Ain",
-    "menuisier Pays de Gex",
+    "menuisier Haute-Savoie 74",
     "menuisier Haute-Savoie",
+    "menuisier Pays de Gex",
     "menuiserie Valserhône",
+    "menuisier Bellegarde-sur-Valserine",
+    "menuisier Saint-Julien-en-Genevois",
     "pose fenêtres Pays de Gex",
     "fenêtres aluminium Ain",
     "fenêtres PVC Haute-Savoie",
+    "volets roulants Ain Haute-Savoie",
   ],
   alternates: {
     canonical: "/zone-intervention",
+  },
+  openGraph: {
+    title: "Zone d'intervention menuiserie : Ain, Haute-Savoie, Pays de Gex",
+    description:
+      "Espace Bois Menuiserie intervient depuis Confort près de Valserhône pour vos fenêtres, volets, portes, escaliers, parquets et rangements.",
+    type: "website",
   },
 };
 
 const areaGroups = [
   {
-    title: "Ain et Valserhône",
-    lead: "La zone la plus directe depuis l'atelier : Valserhône, Bellegarde-sur-Valserine et les communes proches.",
-    places: ["Valserhône", "Bellegarde-sur-Valserine", "Confort", "Lancrans", "Châtillon-en-Michaille", "Nantua", "Oyonnax"],
+    title: "Ain (01) et Valserhône",
+    lead: "La zone la plus directe depuis l'atelier : Confort, Valserhône, Bellegarde-sur-Valserine et les communes proches.",
+    places: [
+      "Confort",
+      "Valserhône",
+      "Bellegarde-sur-Valserine",
+      "Lancrans",
+      "Châtillon-en-Michaille",
+      "Collonges",
+      "Léaz",
+      "Nantua",
+      "Oyonnax",
+    ],
   },
   {
     title: "Pays de Gex",
-    lead: "Déplacement étudié selon le chantier, surtout pour remplacement de fenêtres, volets, portes ou ensemble de menuiseries.",
-    places: ["Gex", "Divonne-les-Bains", "Ferney-Voltaire", "Saint-Genis-Pouilly", "Thoiry", "Prévessin-Moëns", "Cessy"],
+    lead: "Déplacement étudié selon le chantier, surtout pour remplacer plusieurs fenêtres, volets, portes ou ensembles de menuiseries.",
+    places: [
+      "Gex",
+      "Divonne-les-Bains",
+      "Ferney-Voltaire",
+      "Saint-Genis-Pouilly",
+      "Thoiry",
+      "Prévessin-Moëns",
+      "Cessy",
+      "Ornex",
+      "Ségny",
+    ],
   },
   {
-    title: "Haute-Savoie proche",
-    lead: "Interventions possibles côté Haute-Savoie lorsque le trajet et le volume de travaux restent cohérents.",
-    places: ["Saint-Julien-en-Genevois", "Frangy", "Seyssel", "Annecy selon chantier", "Cruseilles selon chantier", "Valleiry"],
+    title: "Haute-Savoie (74) proche",
+    lead: "Interventions possibles côté Haute-Savoie lorsque le trajet, les accès et le volume de travaux restent cohérents.",
+    places: [
+      "Saint-Julien-en-Genevois",
+      "Archamps",
+      "Neydens",
+      "Viry",
+      "Valleiry",
+      "Frangy",
+      "Seyssel",
+      "Cruseilles",
+      "Annecy selon chantier",
+    ],
+  },
+];
+
+const seoAreaSections = [
+  {
+    title: "Menuisier dans l'Ain autour de Valserhône",
+    text:
+      "Depuis Confort, Espace Bois Menuiserie intervient en priorité dans l'Ain pour les projets de menuiserie extérieure et intérieure : remplacement de fenêtres, pose de volets roulants, portes, parquets, escaliers et rangements sur mesure. Les demandes autour de Valserhône, Bellegarde-sur-Valserine, Nantua et Oyonnax sont les plus simples à organiser.",
+  },
+  {
+    title: "Pose de fenêtres et volets dans le Pays de Gex",
+    text:
+      "Dans le Pays de Gex, les chantiers sont étudiés quand le volume justifie le déplacement : fenêtres aluminium RAL 7016, fenêtres PVC blanc, volets, portes d'entrée ou porte de garage. Les communes comme Gex, Divonne-les-Bains, Ferney-Voltaire, Saint-Genis-Pouilly, Thoiry, Cessy et Prévessin-Moëns peuvent être validées dès le premier échange.",
+  },
+  {
+    title: "Menuiserie en Haute-Savoie proche",
+    text:
+      "Côté Haute-Savoie, l'intervention concerne surtout les secteurs proches de l'Ain : Saint-Julien-en-Genevois, Archamps, Neydens, Viry, Valleiry, Frangy, Seyssel ou Cruseilles. Les chantiers vers Annecy peuvent être regardés selon la nature des travaux, les délais et les produits à poser.",
   },
 ];
 
@@ -50,11 +109,36 @@ const projectMatches = [
   "Escaliers, parquets, dressings, placards et agencements intérieurs",
 ];
 
+const faqItems = [
+  {
+    question: "Espace Bois Menuiserie intervient-il dans tout l'Ain ?",
+    answer:
+      "La priorité est donnée à Valserhône, Bellegarde-sur-Valserine, Confort et aux communes proches. Les demandes plus éloignées dans l'Ain, comme Nantua ou Oyonnax, sont étudiées selon le type de menuiserie et le volume du chantier.",
+  },
+  {
+    question: "Est-il possible de faire poser des fenêtres dans le Pays de Gex ?",
+    answer:
+      "Oui, les projets dans le Pays de Gex peuvent être étudiés, surtout pour plusieurs fenêtres, volets, portes ou menuiseries à remplacer. La commune et quelques photos permettent de valider rapidement le déplacement.",
+  },
+  {
+    question: "Intervenez-vous en Haute-Savoie ?",
+    answer:
+      "Oui, principalement en Haute-Savoie proche de l'Ain : Saint-Julien-en-Genevois, Archamps, Neydens, Viry, Valleiry, Frangy, Seyssel ou Cruseilles. Annecy peut être étudiée selon le chantier.",
+  },
+  {
+    question: "Quels travaux sont les plus adaptés à une intervention éloignée ?",
+    answer:
+      "Les remplacements de fenêtres aluminium, fenêtres PVC, volets, portes de garage, escaliers, parquets ou aménagements complets sont plus adaptés qu'un petit réglage isolé.",
+  },
+];
+
 export default function ZoneInterventionPage() {
-  const schema = {
+  const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Zone d'intervention menuiserie",
+    name: "Menuisier Ain, Haute-Savoie et Pays de Gex",
+    description:
+      "Pose de fenêtres, volets, portes et menuiseries intérieures depuis Confort près de Valserhône, dans l'Ain, le Pays de Gex et la Haute-Savoie proche.",
     provider: {
       "@type": "HomeAndConstructionBusiness",
       name: company.name,
@@ -75,13 +159,29 @@ export default function ZoneInterventionPage() {
     ),
     serviceType: projectMatches,
   };
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: item.answer,
+      },
+    })),
+  };
 
   return (
     <>
       <Breadcrumbs items={[{ label: "Zone d'intervention" }]} />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       <section className="py-10 sm:py-16">
@@ -95,8 +195,9 @@ export default function ZoneInterventionPage() {
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-steel">
               Espace Bois Menuiserie part de Confort, près de Valserhône, pour
-              intervenir sur des chantiers cohérents en distance : fenêtres, volets,
-              portes, escaliers, parquets et rangements sur mesure.
+              intervenir dans l'Ain, le Pays de Gex et la Haute-Savoie proche :
+              fenêtres aluminium RAL 7016, PVC blanc, volets, portes, escaliers,
+              parquets et rangements sur mesure.
             </p>
 
             <div className="mt-7 grid gap-4 border-y border-stone/80 py-5 text-sm text-ink sm:grid-cols-2">
@@ -111,7 +212,7 @@ export default function ZoneInterventionPage() {
                 <Clock aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-moss" />
                 <span>
                   <strong>Rayon</strong>
-                  <span className="mt-1 block leading-6 text-steel">Environ 1h autour de Valserhône, selon chantier.</span>
+                  <span className="mt-1 block leading-6 text-steel">Ain, Pays de Gex et Haute-Savoie proche, selon chantier.</span>
                 </span>
               </p>
             </div>
@@ -170,8 +271,8 @@ export default function ZoneInterventionPage() {
             </div>
             <p className="max-w-2xl leading-7 text-steel lg:justify-self-end">
               La liste n'est pas une promesse automatique de déplacement. Elle sert
-              à cadrer rapidement les demandes en menuiserie dans l'Ain, le Pays de
-              Gex et la Haute-Savoie proche.
+              à cadrer rapidement les demandes en menuiserie dans l'Ain (01), le
+              Pays de Gex et la Haute-Savoie (74) proche.
             </p>
           </div>
 
@@ -194,6 +295,35 @@ export default function ZoneInterventionPage() {
       </section>
 
       <section className="bg-paper py-14 sm:py-16">
+        <div className="container-shell">
+          <div className="grid gap-5 lg:grid-cols-[0.72fr_1.28fr] lg:items-end">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-moss">
+                Secteurs
+              </p>
+              <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+                Menuiserie locale par secteur.
+              </h2>
+            </div>
+            <p className="max-w-2xl leading-7 text-steel lg:justify-self-end">
+              Chaque demande est validée avec la commune, le type de menuiserie et
+              quelques photos. Cela permet de confirmer si le chantier est réaliste
+              avant de programmer un déplacement.
+            </p>
+          </div>
+
+          <div className="mt-9 grid gap-5 lg:grid-cols-3">
+            {seoAreaSections.map((section) => (
+              <article key={section.title} className="border-l-4 border-moss bg-linen p-5">
+                <h3 className="text-xl font-semibold leading-snug text-ink">{section.title}</h3>
+                <p className="mt-4 text-sm leading-7 text-steel">{section.text}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-linen py-14 sm:py-16">
         <div className="container-shell grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-moss">
@@ -205,7 +335,8 @@ export default function ZoneInterventionPage() {
             <p className="mt-4 leading-7 text-steel">
               Pour un petit réglage isolé, la zone sera plus courte. Pour un
               remplacement de plusieurs fenêtres, une porte de garage ou un chantier
-              complet, l'intervention peut être étudiée plus largement.
+              complet dans l'Ain, le Pays de Gex ou la Haute-Savoie proche,
+              l'intervention peut être étudiée plus largement.
             </p>
           </div>
 
@@ -215,6 +346,33 @@ export default function ZoneInterventionPage() {
                 <CheckCircle2 aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-moss" />
                 {item}
               </p>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-paper py-14 sm:py-16">
+        <div className="container-shell grid gap-8 lg:grid-cols-[0.72fr_1.28fr]">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-moss">
+              Questions fréquentes
+            </p>
+            <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
+              Zone d'intervention, sans flou.
+            </h2>
+            <p className="mt-4 leading-7 text-steel">
+              Ces réponses aident à qualifier les recherches locales avant l'appel :
+              menuisier Ain, pose fenêtres Pays de Gex, menuiserie Haute-Savoie
+              proche ou remplacement de volets autour de Valserhône.
+            </p>
+          </div>
+
+          <div className="divide-y divide-stone/80 border-y border-stone/80">
+            {faqItems.map((item) => (
+              <article key={item.question} className="py-5">
+                <h3 className="text-lg font-semibold leading-snug text-ink">{item.question}</h3>
+                <p className="mt-3 leading-7 text-steel">{item.answer}</p>
+              </article>
             ))}
           </div>
         </div>

@@ -10,17 +10,17 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
 export const metadata: Metadata = {
   metadataBase: siteUrl ? new URL(siteUrl) : undefined,
   title: {
-    default: "Menuisier Valserhône, Ain, Pays de Gex - Espace Bois Menuiserie",
+    default: "Menuisier Ain, Pays de Gex, Haute-Savoie - Espace Bois Menuiserie",
     template: "%s | Espace Bois Menuiserie",
   },
   description:
-    "Pose de fenêtres alu RAL 7016, PVC blanc, volets, portes et bois intérieur autour de Valserhône, dans l'Ain, le Pays de Gex et la Haute-Savoie proche.",
+    "Pose de fenêtres alu RAL 7016, PVC blanc, volets, portes et bois intérieur depuis Confort près de Valserhône, dans l'Ain, le Pays de Gex et la Haute-Savoie proche.",
   keywords: company.seoTerms,
   authors: [{ name: company.name }],
   openGraph: {
-    title: "Menuisier Valserhône, Ain, Pays de Gex - Espace Bois Menuiserie",
+    title: "Menuisier Ain, Pays de Gex, Haute-Savoie - Espace Bois Menuiserie",
     description:
-      "Menuiseries posées proprement autour de Valserhône, dans l'Ain, le Pays de Gex et la Haute-Savoie proche.",
+      "Menuiseries posées proprement depuis Confort près de Valserhône, dans l'Ain, le Pays de Gex et la Haute-Savoie proche.",
     locale: "fr_FR",
     type: "website",
   },
