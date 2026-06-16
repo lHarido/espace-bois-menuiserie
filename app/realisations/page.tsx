@@ -53,7 +53,7 @@ export default function RealisationsPage() {
                   <h2 className="mt-2 max-w-2xl text-2xl font-semibold leading-tight sm:text-3xl">
                     {featured.title}
                   </h2>
-                  <p className="mt-3 max-w-xl leading-7 text-paper/86">{featured.description}</p>
+                  <p className="mt-3 max-w-xl leading-7 text-steel">{featured.description}</p>
                 </div>
               </div>
             </article>

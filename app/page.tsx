@@ -263,7 +263,7 @@ export default function HomePage() {
                   <h3 className="mt-2 max-w-xl text-2xl font-semibold leading-tight sm:text-3xl">
                     {mainProjects[0].title}
                   </h3>
-                  <p className="mt-3 max-w-xl leading-7 text-paper/86">{mainProjects[0].description}</p>
+                  <p className="mt-3 max-w-xl leading-7 text-steel">{mainProjects[0].description}</p>
                 </div>
               </div>
             </Link>
