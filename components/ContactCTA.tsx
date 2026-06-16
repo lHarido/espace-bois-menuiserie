@@ -9,7 +9,7 @@ type ContactCTAProps = {
 
 export function ContactCTA({
   title = "Un projet à clarifier ?",
-  text = "Un premier appel permet de valider le besoin, la zone d'intervention et les priorités du chantier.",
+  text = "Un premier appel permet de parler du besoin, de la commune et des priorités du chantier.",
 }: ContactCTAProps) {
   return (
     <section className="atelier-texture py-14 text-paper">

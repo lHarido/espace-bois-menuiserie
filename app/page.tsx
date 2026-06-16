@@ -51,7 +51,7 @@ const materialChoices = [
   {
     name: "Alu RAL 7016",
     bestFor: "Lignes fines, façade contemporaine, baies vitrées.",
-    watch: "À valider avec le style de la maison et l'exposition.",
+    watch: "À accorder avec le style de la maison et l'exposition.",
   },
   {
     name: "Bois",
@@ -63,7 +63,7 @@ const materialChoices = [
 const callSteps = [
   {
     title: "Votre commune",
-    text: "On confirme tout de suite si le chantier rentre dans le rayon autour de Valserhône.",
+    text: "Cela permet de situer le chantier et d'organiser la suite simplement.",
     icon: MapPin,
   },
   {
@@ -354,13 +354,13 @@ export default function HomePage() {
           <div>
             <p className="text-sm font-semibold uppercase text-moss">Zone d'intervention</p>
             <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-              Ain, Pays de Gex et Haute-Savoie proche : la commune se valide au départ.
+              Ain, Pays de Gex et Haute-Savoie proche : dites simplement où se trouve le chantier.
             </h2>
             <p className="mt-4 leading-7 text-steel">
-              Le plus simple reste d'appeler avec la commune du chantier. Selon la
-              nature des travaux, l'intervention peut couvrir Valserhône, le secteur
-              de Bellegarde-sur-Valserine, le Pays de Gex, Nantua, Oyonnax et la
-              Haute-Savoie proche.
+              Un appel permet de situer le projet et d'organiser la suite. Selon
+              la nature des travaux, l'entreprise intervient autour de Valserhône,
+              Bellegarde-sur-Valserine, dans le Pays de Gex, vers Nantua, Oyonnax
+              et en Haute-Savoie proche.
             </p>
             <Link
               href="/zone-intervention"
@@ -406,7 +406,7 @@ export default function HomePage() {
 
       <ContactCTA
         title="Vous avez une photo du chantier sous la main ?"
-        text="Appelez avec la commune, le type de projet et deux photos. Vous saurez vite si la demande est dans la bonne zone et quel matériau mérite d'être étudié."
+        text="Appelez avec la commune, le type de projet et quelques photos. Vous aurez un retour clair sur les possibilités, les matériaux adaptés et les prochaines étapes."
       />
     </>
   );

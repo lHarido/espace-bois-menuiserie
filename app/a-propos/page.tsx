@@ -79,7 +79,7 @@ export default function AProposPage() {
           </div>
         </div>
       </section>
-      <ContactCTA title="Vous voulez savoir si le chantier rentre dans la zone ?" text="Appelez avec la commune et deux photos. La première réponse doit être claire, pas décorative." />
+      <ContactCTA title="Vous avez un projet autour de Valserhône ?" text="Appelez avec la commune et quelques photos. Vous aurez une première réponse simple pour avancer sereinement." />
     </>
   );
 }

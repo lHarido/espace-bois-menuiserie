@@ -70,7 +70,7 @@ export default function AvisPage() {
           </div>
         </div>
       </section>
-      <ContactCTA title="Vous voulez éviter les mauvaises surprises ?" text="Décrivez le chantier simplement : commune, photos, dimensions et objectif. Le premier échange sert à cadrer avant d'aller plus loin." />
+      <ContactCTA title="Vous voulez avancer avec un artisan soigneux ?" text="Décrivez le chantier simplement : commune, photos, dimensions et objectif. Vous aurez un premier retour clair pour préparer la suite." />
     </>
   );
 }

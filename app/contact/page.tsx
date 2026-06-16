@@ -24,12 +24,13 @@ export default function ContactPage() {
             <div>
               <p className="text-sm font-semibold uppercase text-moss">Contact</p>
               <h1 className="mt-3 font-display text-4xl font-semibold leading-tight text-ink sm:text-5xl">
-                Le plus rapide : appeler avec deux photos.
+                Un projet de menuiserie ? Parlons-en simplement.
               </h1>
               <p className="mt-5 leading-7 text-steel">
-                Donnez la commune du chantier, le type de menuiserie et une mesure
-                approximative. Le premier échange sert à savoir si la demande est
-                dans la bonne zone et quelle solution mérite d'être étudiée.
+                Appelez ou envoyez un message avec votre commune, quelques photos
+                si vous en avez et les dimensions approximatives. Vous aurez une
+                réponse claire sur les possibilités, les délais et les prochaines
+                étapes.
               </p>
 
               <div className="mt-8 border-y border-stone/80 py-5">

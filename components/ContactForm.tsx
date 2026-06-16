@@ -138,7 +138,7 @@ export function ContactForm({ contactEmail }: ContactFormProps) {
       </div>
 
       <div className="mt-5 rounded-md bg-sage px-4 py-3 text-sm leading-6 text-ink">
-        <p>Pas besoin d'un dossier parfait : une commune, deux photos et une mesure suffisent souvent pour savoir si le projet part dans la bonne direction.</p>
+        <p>Pas besoin d'un dossier parfait : une commune, quelques photos et une mesure suffisent souvent pour préparer un premier contact utile.</p>
       </div>
 
       {status === "prepared" ? (
@@ -146,7 +146,7 @@ export function ContactForm({ contactEmail }: ContactFormProps) {
           <CheckCircle2 aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-moss" />
           <p>
             Votre demande est prête à être expliquée. Appelez directement l'entreprise
-            pour valider la faisabilité et les prochaines étapes.
+            pour parler du projet et des prochaines étapes.
           </p>
         </div>
       ) : null}

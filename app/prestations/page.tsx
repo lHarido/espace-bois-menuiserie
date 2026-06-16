@@ -23,12 +23,12 @@ export default function PrestationsPage() {
           <div className="flex min-w-0 flex-col justify-center">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-moss">Projets</p>
             <h1 className="mt-4 font-display text-4xl font-semibold leading-tight text-ink sm:text-5xl">
-              Partez du chantier, pas de la catégorie.
+              Fenêtres, volets, portes et aménagements sur mesure.
             </h1>
             <p className="mt-5 max-w-xl text-lg leading-8 text-steel">
-              Fenêtres alu RAL 7016, PVC blanc, volets, porte de garage,
-              escalier, parquet ou rangement : le bon choix dépend d'abord de la
-              maison, de l'usage et des finitions attendues.
+              Remplacement de fenêtres, pose de volets, porte de garage,
+              escalier, parquet ou rangement : chaque choix est expliqué
+              simplement selon votre maison, vos usages et le rendu souhaité.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function PrestationsPage() {
               {[
                 {
                   label: "Commune",
-                  text: "Pour vérifier tout de suite si le chantier est dans la zone.",
+                  text: "Pour organiser facilement le premier contact.",
                   icon: MapPin,
                 },
                 {
@@ -136,7 +136,7 @@ export default function PrestationsPage() {
           </div>
         </div>
       </section>
-      <ContactCTA title="Vous hésitez entre deux solutions ?" text="Appelez avec la commune, deux photos et l'objectif du chantier. Le choix entre PVC, aluminium ou bois sera plus simple à trancher." />
+      <ContactCTA title="Vous hésitez entre deux solutions ?" text="Appelez avec la commune, quelques photos et l'objectif du chantier. Le choix entre PVC, aluminium ou bois sera plus simple à comparer." />
     </>
   );
 }

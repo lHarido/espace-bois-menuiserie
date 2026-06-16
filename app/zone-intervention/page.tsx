@@ -54,7 +54,7 @@ const areaGroups = [
   },
   {
     title: "Pays de Gex",
-    lead: "Déplacement étudié selon le chantier, surtout pour remplacer plusieurs fenêtres, volets, portes ou ensembles de menuiseries.",
+    lead: "Interventions possibles pour les projets de fenêtres, volets, portes ou ensembles de menuiseries.",
     places: [
       "Gex",
       "Divonne-les-Bains",
@@ -69,7 +69,7 @@ const areaGroups = [
   },
   {
     title: "Haute-Savoie (74) proche",
-    lead: "Interventions possibles côté Haute-Savoie lorsque le trajet, les accès et le volume de travaux restent cohérents.",
+    lead: "Interventions possibles côté Haute-Savoie proche selon la commune, les accès et le planning.",
     places: [
       "Saint-Julien-en-Genevois",
       "Archamps",
@@ -93,7 +93,7 @@ const seoAreaSections = [
   {
     title: "Pose de fenêtres et volets dans le Pays de Gex",
     text:
-      "Dans le Pays de Gex, les chantiers sont étudiés quand le volume justifie le déplacement : fenêtres aluminium RAL 7016, fenêtres PVC blanc, volets, portes d'entrée ou porte de garage. Les communes comme Gex, Divonne-les-Bains, Ferney-Voltaire, Saint-Genis-Pouilly, Thoiry, Cessy et Prévessin-Moëns peuvent être validées dès le premier échange.",
+      "Dans le Pays de Gex, Espace Bois Menuiserie répond aux demandes de fenêtres aluminium RAL 7016, fenêtres PVC blanc, volets, portes d'entrée ou porte de garage. Les communes comme Gex, Divonne-les-Bains, Ferney-Voltaire, Saint-Genis-Pouilly, Thoiry, Cessy et Prévessin-Moëns peuvent être évoquées simplement au premier contact.",
   },
   {
     title: "Menuiserie en Haute-Savoie proche",
@@ -118,7 +118,7 @@ const faqItems = [
   {
     question: "Est-il possible de faire poser des fenêtres dans le Pays de Gex ?",
     answer:
-      "Oui, les projets dans le Pays de Gex peuvent être étudiés, surtout pour plusieurs fenêtres, volets, portes ou menuiseries à remplacer. La commune et quelques photos permettent de valider rapidement le déplacement.",
+      "Oui, les projets dans le Pays de Gex peuvent être regardés, surtout pour des fenêtres, volets, portes ou menuiseries à remplacer. La commune et quelques photos permettent de préparer une première réponse claire.",
   },
   {
     question: "Intervenez-vous en Haute-Savoie ?",
@@ -252,7 +252,7 @@ export default function ZoneInterventionPage() {
                   <span className="hidden sm:inline">Ain, Pays de Gex, Haute-Savoie proche</span>
                 </p>
                 <p className="mt-2 max-w-lg text-2xl font-semibold leading-tight">
-                  Une zone large, mais pas au hasard : la commune se valide dès le premier appel.
+                  Une zone large, avec un premier contact simple autour de votre commune.
                 </p>
               </div>
             </figcaption>
@@ -273,7 +273,7 @@ export default function ZoneInterventionPage() {
             </div>
             <p className="max-w-2xl leading-7 text-steel lg:justify-self-end">
               La liste n'est pas une promesse automatique de déplacement. Elle sert
-              à cadrer rapidement les demandes en menuiserie dans l'Ain (01), le
+              à situer rapidement les demandes en menuiserie dans l'Ain (01), le
               Pays de Gex et la Haute-Savoie (74) proche.
             </p>
           </div>
@@ -332,13 +332,12 @@ export default function ZoneInterventionPage() {
               Chantiers concernés
             </p>
             <h2 className="mt-3 font-display text-3xl font-semibold leading-tight text-ink sm:text-4xl">
-              Le déplacement dépend surtout du projet.
+              Chaque projet se regarde simplement.
             </h2>
             <p className="mt-4 leading-7 text-steel">
-              Pour un petit réglage isolé, la zone sera plus courte. Pour un
-              remplacement de plusieurs fenêtres, une porte de garage ou un chantier
-              complet dans l'Ain, le Pays de Gex ou la Haute-Savoie proche,
-              l'intervention peut être étudiée plus largement.
+              Indiquez la commune, le type de menuiserie et quelques photos si
+              vous en avez. Cela permet de vous répondre clairement sur la suite,
+              que le projet concerne l'Ain, le Pays de Gex ou la Haute-Savoie proche.
             </p>
           </div>
 
@@ -363,7 +362,7 @@ export default function ZoneInterventionPage() {
               Zone d'intervention, sans flou.
             </h2>
             <p className="mt-4 leading-7 text-steel">
-              Ces réponses aident à qualifier les recherches locales avant l'appel :
+              Ces réponses aident à préparer les recherches locales avant l'appel :
               menuisier Ain, pose fenêtres Pays de Gex, menuiserie Haute-Savoie
               proche ou remplacement de volets autour de Valserhône.
             </p>
@@ -382,7 +381,7 @@ export default function ZoneInterventionPage() {
 
       <ContactCTA
         title="Votre commune est dans l'Ain, le Pays de Gex ou la Haute-Savoie proche ?"
-        text="Appelez avec la commune, le type de menuiserie et deux photos. Vous saurez vite si le déplacement est cohérent et quelle solution mérite d'être étudiée."
+        text="Appelez avec la commune, le type de menuiserie et quelques photos. Vous aurez un premier retour clair pour avancer sereinement."
       />
     </>
   );
